@@ -78,5 +78,7 @@ a {
 svg {
   display: inline-block;
   vertical-align: middle;
-  fill: currentColor;
+  &.icon {
+    fill: currentColor;
+  }
 }

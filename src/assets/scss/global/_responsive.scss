@@ -1,24 +1,11 @@
-@include breakpoint(small only) {
-  // Home page
-}
-
-@include breakpoint(medium down) {
-  // Home page
-}
-
 @include breakpoint(medium) {
   // Home page
+  .header-content {
+    border-bottom: 1px solid #000;
+  }
 }
 
 @include breakpoint(large) {
-  // Home page
-}
-
-@include breakpoint(1200px) {
-  // Home page
-}
-
-@include breakpoint(1280px) {
   // Home page
 }
 
@@ -26,6 +13,14 @@
   // Home page
 }
 
-@include breakpoint(xxlarge) {
+@include breakpoint(1280px) {
+  // Home page
+}
+
+@include breakpoint(medium down) {
+  // Home page
+}
+
+@include breakpoint(small only) {
   // Home page
 }
