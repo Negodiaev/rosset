@@ -93,6 +93,11 @@ var TablesawConfig = {
 };
 
 document.addEventListener('DOMContentLoaded', function(event) {
+  // search toggle
+  $('.search-toggle').on('click', function(e) {
+    e.preventDefault();
+  });
+
   // hero slider
   var heroSwiper = new Swiper('#hero-slider', {
     loop: true,

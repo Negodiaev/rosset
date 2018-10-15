@@ -7,22 +7,36 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная | Rosset</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
   <link rel="stylesheet" href="assets/css/app.css">
 </head>
 
 <body>
 
   <div class="off-canvas-wrapper">
-    <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
-      <ul class="main-menu vertical menu">
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
+    <div id="offCanvas" class="side off-canvas position-right text-center" data-off-canvas>
+      <div class="side-options-panel options-panel flex-container align-center">
+        <button class="side-search-toggle search-toggle" type="button">
+          <svg class="icon" width="17" height="17">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+        <div class="select plain">
+          <select>
+            <option value="ru">Ru</option>
+            <option value="en">En</option>
+          </select>
+        </div>
+      </div>
+      <!-- /.options-panel -->
+      <ul class="side-menu vertical menu">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Публикации</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
-      <!-- /.main-menu -->
+      <!-- /.side-menu -->
     </div>
     <!-- /.off-canvas -->
     <div class="off-canvas-content" data-off-canvas-content>
@@ -31,22 +45,22 @@
   <div class="grid-container">
     <div class="header-content grid-container full">
       <div class="grid-x grid-margin-x align-middle">
-        <div class="cell small-2 medium-6 medium-order-2">
+        <div class="cell small-2 medium-4 medium-order-2">
           <div class="header-callback callback medium-text-right">
-            <p class="callback-text">
+            <div class="callback-text">
               <a href="tel:+78003508403" class="header-phone-link phone-link">
-                <svg class="icon hide-for-medium" width="24" height="24">
+                <svg class="icon hide-for-medium" width="22" height="22">
                   <use xlink:href="#phone"></use>
                 </svg>
                 <span class="phone-link-text show-for-medium">8&nbsp;800&nbsp;350&nbsp;84&nbsp;03</span>
               </a>
-            </p>
-            <a href="#" class="callback-link show-for-medium">Заказать звонок</a>
+            </div>
+            <a href="#" class="header-callback-link callback-link show-for-medium">Заказать звонок</a>
           </div>
         </div>
         <!-- /.cell -->
-        <div class="cell small-8 medium-6 medium-order-1 text-center medium-text-left">
-          <a href="#" class="header-logo logo flex-container align-middle">
+        <div class="cell small-8 medium-8 medium-order-1 text-center medium-text-left">
+          <a href="#" class="header-logo logo">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.15 104.33"
               width="87" height="75">
               <defs>
@@ -85,7 +99,7 @@
           </a>
         </div>
         <!-- /.cell -->
-        <div class="cell small-2 hide-for-medium">
+        <div class="burger-wrapper cell small-2 hide-for-medium text-right">
           <button type="button" class="burger" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
             <i></i>
             <i></i>
@@ -101,9 +115,9 @@
   <!-- /.grid-container -->
   <div class="navigation show-for-medium">
     <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell medium-9">
-          <ul class="navigation-menu menu">
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell medium-9 large-8">
+          <ul class="navigation-menu menu simple">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Услуги</a></li>
@@ -112,18 +126,21 @@
           </ul>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-3">
-          <div class="options-panel flex-container text-right">
-            <button class="button" type="button">
+        <div class="cell medium-3 large-4">
+          <div class="options-panel flex-container align-right">
+            <button class="header-search-toggle search-toggle" type="button">
               <svg class="icon" width="17" height="17">
                 <use xlink:href="#magnifier"></use>
               </svg>
             </button>
-            <select>
-              <option value="ru">Ru</option>
-              <option value="en">En</option>
-            </select>
+            <div class="select plain">
+              <select>
+                <option value="ru">Ru</option>
+                <option value="en">En</option>
+              </select>
+            </div>
           </div>
+          <!-- /.options-panel -->
         </div>
         <!-- /.cell -->
       </div>
@@ -135,38 +152,43 @@
 </header>
 <!-- /.header --> <main class="main">
   <div class="grid-container">
-    <div class="hero">
+    <div class="hero section">
       <div id="hero-slider" class="hero-slider swiper-container">
         <div class="swiper-wrapper">
           <div class="hero-slide swiper-slide picture-container">
             <img src="assets/img/hero/1.jpg" alt="">
-            <div class="hero-content">
-              <div class="hero-title title bordered secondary">Лучшие сетки для строительства</div>
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
-                Восприятие текста изучается в рамках лингвистики текста и</p>
-              <a href="#" class="button default">Перейти</a>
+            <div class="hero-slide-content picture-container-content">
+              <div class="hero-slide-title title bordered secondary h1">Лучшие сетки для строительства</div>
+              <div class="hero-slide-info">
+                <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
+                  Восприятие текста изучается в рамках лингвистsики текста и</p>
+              </div>
+              <a href="#" class="button plain">Перейти</a>
             </div>
             <!-- /.hero-content -->
           </div>
           <!-- /.hero-slide -->
           <div class="hero-slide swiper-slide picture-container">
             <img src="assets/img/hero/1.jpg" alt="">
-            <div class="hero-content">
-              <div class="hero-title title bordered secondary">Лучшие сетки для строительства</div>
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
-                Восприятие текста изучается в рамках лингвистики текста и</p>
-              <p>включая и образцы устной речи. Восприятие текста изучается в рамках лингвистики текста и</p>
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи</p>
+            <div class="hero-slide-content picture-container-content">
+              <div class="hero-slide-title title bordered secondary h1">Второй слайд</div>
+              <div class="hero-slide-info">
+                <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
+                  Восприятие текста изучается в рамках лингвистики текста и</p>
+                <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи</p>
+              </div>
             </div>
             <!-- /.hero-content -->
           </div>
           <!-- /.hero-slide -->
           <div class="hero-slide swiper-slide picture-container">
             <img src="assets/img/hero/1.jpg" alt="">
-            <div class="hero-content">
-              <div class="hero-title title bordered secondary">Лучшие сетки для строительства</div>
-              <p>Восприятие текста изучается в рамках лингвистики текста и</p>
-              <a href="#" class="button default">Перейти</a>
+            <div class="hero-slide-content picture-container-content">
+              <div class="hero-slide-title title bordered secondary h1">Слайд 3</div>
+              <div class="hero-slide-info">
+                <p>Восприятие текста изучается в рамках лингвистики текста и</p>
+              </div>
+              <a href="#" class="button plain">Перейти</a>
             </div>
             <!-- /.hero-content -->
           </div>
@@ -178,142 +200,143 @@
       <!-- /.hero-slider -->
     </div>
     <!-- /.hero -->
-    <div class="goods-blocks blocks grid-x grid-padding-x medium-up-2 large-up-3 xlarge-up-5 text-center">
+    <div class="goods-blocks blocks section grid-x grid-padding-x medium-up-2 large-up-3 xlarge-up-5 text-center">
       <div class="blocks-cell cell">
         <a href="#" class="goods-card blocks-card card">
-          <img src="assets/img/goods/1.jpg" class="card-picture" alt="">
-          <div class="card-content card-section">Промышленные сетки</div>
+          <img src="assets/img/goods/1.jpg" alt="">
+          <div class="goods-card-content card-section">Промышленные <br>сетки</div>
         </a>
       </div>
       <!-- /.cell -->
       <div class="blocks-cell cell">
         <a href="#" class="goods-card blocks-card card">
-          <img src="assets/img/goods/1.jpg" class="card-picture" alt="">
-          <div class="card-content card-section">Промышленные сетки</div>
+          <img src="assets/img/goods/2.jpg" alt="">
+          <div class="goods-card-content card-section">Каркасные <br>сетки</div>
         </a>
       </div>
       <!-- /.cell -->
       <div class="blocks-cell cell">
         <a href="#" class="goods-card blocks-card card">
-          <img src="assets/img/goods/1.jpg" class="card-picture" alt="">
-          <div class="card-content card-section">Промышленные сетки</div>
+          <img src="assets/img/goods/3.jpg" alt="">
+          <div class="goods-card-content card-section">Проволока</div>
         </a>
       </div>
       <!-- /.cell -->
       <div class="blocks-cell cell">
         <a href="#" class="goods-card blocks-card card">
-          <img src="assets/img/goods/1.jpg" class="card-picture" alt="">
-          <div class="card-content card-section">Промышленные сетки</div>
+          <img src="assets/img/goods/4.jpg" alt="">
+          <div class="goods-card-content card-section">Сетки и ограждения</div>
         </a>
       </div>
       <!-- /.cell -->
       <div class="blocks-cell cell">
         <a href="#" class="goods-card blocks-card card">
-          <img src="assets/img/goods/1.jpg" class="card-picture" alt="">
-          <div class="card-content card-section">Промышленные сетки</div>
+          <img src="assets/img/goods/5.jpg" alt="">
+          <div class="goods-card-content card-section">Изделия из сетки</div>
         </a>
       </div>
       <!-- /.cell -->
     </div>
     <!-- /.goods-blocks -->
     <div class="advantages section">
-      <div class="h2">Наши преимущества</div>
+      <div class="section-title h2">Наши преимущества</div>
       <div class="grid-container full">
         <div class="advantages-blocks blocks grid-x grid-margin-x medium-up-2 large-up-3 align-center">
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
                 <svg class="icon" width="73" height="73">
                   <use xlink:href="#advantage-1"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Импортозамещение</div>
                 <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
                   логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
-                <svg class="icon" width="73" height="73">
-                  <use xlink:href="#advantage-1"></use>
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
+                <svg class="icon" width="69" height="69">
+                  <use xlink:href="#advantage-2"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
-                <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
-                  логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Уникальное оборудование</div>
+                <p>11,6 м - заправочная ширина полотна единственного в мире многофункционального станка фирмы
+                  Schlatter, что позволяет производить синтетические сетки до 75 м в длину и до 11 м в ширину.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
-                <svg class="icon" width="73" height="73">
-                  <use xlink:href="#advantage-1"></use>
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
+                <svg class="icon" width="70" height="76">
+                  <use xlink:href="#advantage-3"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
-                <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
-                  логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Широкий ассортимент</div>
+                <p>Выпускаем более 180 видов металлических и синтетических сеток в виде рулонов и цельных полотен,
+                  скрепленных 10 видами швов (одежды) для 10 отраслей промышленности и сельского хозяйства.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
-                <svg class="icon" width="73" height="73">
-                  <use xlink:href="#advantage-1"></use>
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
+                <svg class="icon" width="71" height="71">
+                  <use xlink:href="#advantage-4"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
-                <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
-                  логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Контроль качества</div>
+                <p>Закупаем синтетическую мононить в компании PERLON, Германия. Каждая партия поступающего сырья и
+                  продукция на всех этапах производства и отгрузки проходит испытание в центральной заводской
+                  лаборатории и ОТК.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
-                <svg class="icon" width="73" height="73">
-                  <use xlink:href="#advantage-1"></use>
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
+                <svg class="icon" width="66" height="66">
+                  <use xlink:href="#advantage-5"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
-                <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
-                  логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Гибкое производство</div>
+                <p>Настраиваем выпуск продукции под эксплуатационные потребности компаний-заказчиков. Сроки выполнения
+                  заявок от 1 недели. Наиболее востребованные позиции всегда есть на складе готовой продукции.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
-          <div class="cell">
-            <div class="advantages-item card">
-              <div class="advantages-item-picture card-section">
-                <svg class="icon" width="73" height="73">
-                  <use xlink:href="#advantage-1"></use>
+          <div class="blocks-cell cell">
+            <div class="blocks-card card">
+              <div class="advantages-card-picture card-picture card-section">
+                <svg class="icon" width="67" height="67">
+                  <use xlink:href="#advantage-6"></use>
                 </svg>
               </div>
-              <div class="advantages-item-content card-section">
-                <div class="advantages-item-title h4">Импортозамещение</div>
-                <p>Продукция завода «Россет» производится в России, что позволяет сократить таможенные сборы и расходы,
-                  логистику, устанавливать приемлемые цены и оптимизировать издержки производства заказчиков.</p>
+              <div class="advantages-card-info card-info card-section">
+                <div class="advantages-card-title card-title h4">Комплексный сервис</div>
+                <p>Сопровождаем на протяжении всего срока эксплуатации сеток на оборудовании заказчика. Помогаем
+                  повысить срок службы сеток и улучшить качество выпускаемой продукции.</p>
               </div>
             </div>
-            <!-- /.advantages-item -->
+            <!-- /.card -->
           </div>
           <!-- /.cell -->
         </div>
@@ -322,43 +345,54 @@
       <!-- /.grid-container -->
     </div>
     <!-- /.advantages -->
-    <div class="section grid-x grid-padding-x">
-      <div class="cell medium-8">
-        <div class="h2">Карта поставок</div>
-        <img src="assets/img/map.jpg" alt="">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="large">
+      <div class="delivery-map section cell large-8">
+        <div class="section-title h2">Карта поставок</div>
+        <div class="delivery-map-picture content-block" data-equalizer-watch>
+          <img src="assets/img/map.jpg" alt="">
+        </div>
       </div>
       <!-- /.cell -->
-      <div class="cell medium-4">
-        <div class="h2">новости</div>
-        <div class="news-item card">
-          <div class="h6"><a href="#">Открыт новый цех</a></div>
-          <p>В лингвистике термин «текст» используется в широком значении,</p>
-          <div class="card-date">20 Сентября, 2018</div>
+      <div class="news section cell large-4">
+        <div class="section-title h2">Новости</div>
+        <div class="news-cards" data-equalizer-watch>
+          <div class="news-card card">
+            <div class="news-card-info card-info card-section">
+              <div class="news-card-title h6"><a href="#">Открыт новый цех</a></div>
+              <p>В лингвистике термин «текст» используется в широком значении,</p>
+              <div class="news-card-date card-date">20 Сентября, 2018</div>
+            </div>
+          </div>
+          <!-- /.news-card -->
+          <div class="news-card card">
+            <div class="news-card-info card-info card-section">
+              <div class="news-card-title h6"><a href="#">Наименование новости</a></div>
+              <p>В лингвистике термин «текст» используется в широком значении,</p>
+              <div class="news-card-date card-date">20 Сентября, 2018</div>
+            </div>
+          </div>
+          <!-- /.news-card -->
+          <div class="news-card card">
+            <div class="news-card-info card-info card-section">
+              <div class="news-card-title h6"><a href="#">Открыт новый цех</a></div>
+              <p>В лингвистике термин «текст» используется в широком значении,</p>
+              <div class="news-card-date card-date">20 Сентября, 2018</div>
+            </div>
+          </div>
+          <!-- /.news-card -->
         </div>
-        <!-- /.news-item -->
-        <div class="news-item card">
-          <div class="h6"><a href="#">Открыт новый цех</a></div>
-          <p>В лингвистике термин «текст» используется в широком значении,</p>
-          <div class="card-date">20 Сентября, 2018</div>
-        </div>
-        <!-- /.news-item -->
-        <div class="news-item card">
-          <div class="h6"><a href="#">Открыт новый цех</a></div>
-          <p>В лингвистике термин «текст» используется в широком значении,</p>
-          <div class="card-date">20 Сентября, 2018</div>
-        </div>
-        <!-- /.news-item -->
+        <!-- /.news-cards -->
       </div>
       <!-- /.cell -->
     </div>
     <!-- /.grid-x -->
-    <div class="section grid-x grid-padding-x">
-      <div class="cell medium-6 large-4">
-        <div class="h2">Акционерам</div>
-        <div class="info-item card">
-          <a href="#" class="info-item-picture"><img src="assets/img/info/1.jpg" alt=""></a>
-          <div class="info-item-content card-section">
-            <div class="info-item-title h5">
+    <div class="grid-x grid-padding-x" data-equalizer data-equalize-on="large">
+      <div class="shareholders section section-part cell medium-6 large-4">
+        <div class="section-part-title section-title h2">Акционерам</div>
+        <div class="custom-card card" data-equalizer-watch>
+          <a href="#" class="custom-card-picture"><img src="assets/img/info/1.jpg" alt=""></a>
+          <div class="custom-card-info card-section">
+            <div class="custom-card-title h5">
               <a href="#">Все коммуникации компании с инвесторами и акционерами</a>
             </div>
             <p>От устава и годовых отчетов - до стратегии развития</p>
@@ -366,41 +400,40 @@
         </div>
       </div>
       <!-- /.cell -->
-      <div class="cell medium-6 large-4">
-        <div class="h2">Дилерам</div>
-        <div class="info-item card">
-          <a href="#" class="info-item-picture"><img src="assets/img/info/2.jpg" alt=""></a>
-          <div class="info-item-content card-section">
-            <div class="info-item-title h5">
+      <div class="section section-part cell medium-6 large-4">
+        <div class="section-part-title section-title h2">Дилерам</div>
+        <div class="custom-card card" data-equalizer-watch>
+          <a href="#" class="custom-card-picture"><img src="assets/img/info/2.jpg" alt=""></a>
+          <div class="custom-card-info card-section">
+            <div class="custom-card-title h5">
               <a href="#">Что должны знать о дилерской сети «Россет»</a>
             </div>
             <p>Наши региональные партнёры и те, кто хочет к нам присоединиться: карта дилеров, условия и особенности
               сотрудничества, маркетинговая поддержка.</p>
           </div>
         </div>
-
       </div>
       <!-- /.cell -->
-      <div class="cell large-4">
-        <div class="h2">Закупки</div>
-        <div class="purchase card">
+      <div class="section section-part cell large-4">
+        <div class="section-part-title section-title h2">Закупки</div>
+        <div class="purchase card" data-equalizer-watch>
           <ul class="purchase-list">
             <li>
-              <div class="purchase-item">
+              <div class="purchase-item news-card-info">
                 <p>Краткое название покупки, например, а/м «Газель»</p>
-                <div class="card-date">20 Сентября, 2018</div>
+                <div class="purchase-item-date card-date">20 Сентября, 2018</div>
               </div>
             </li>
             <li>
-              <div class="purchase-item">
+              <div class="purchase-item news-card-info">
                 <p>В лингвистике термин «текст» используется в широком значении</p>
-                <div class="card-date">20 Сентября, 2018</div>
+                <div class="purchase-item-date card-date">20 Сентября, 2018</div>
               </div>
             </li>
             <li>
-              <div class="purchase-item">
+              <div class="purchase-item news-card-info">
                 <p>Включая и образцы устной речи. Восприятие текста изучается в рамках </p>
-                <div class="card-date">20 Сентября, 2018</div>
+                <div class="purchase-item-date card-date">20 Сентября, 2018</div>
               </div>
             </li>
           </ul>
@@ -410,15 +443,15 @@
       <!-- /.cell -->
     </div>
     <!-- /.grid-x -->
-    <div class="section grid-x grid-padding-x">
+    <div class="publications section grid-x grid-padding-x">
       <div class="cell">
-        <div class="h2">Публикации</div>
+        <div class="section-part-title section-title h2">Публикации</div>
       </div>
-      <div class="cell large-6">
-        <div class="info-item card">
-          <a href="#" class="info-item-picture"><img src="assets/img/articles/1.jpg" alt=""></a>
-          <div class="info-item-content card-section">
-            <div class="info-item-title h5">
+      <div class="section-part cell medium-6">
+        <div class="custom-card card">
+          <a href="#" class="custom-card-picture"><img src="assets/img/articles/1.jpg" alt=""></a>
+          <div class="articles-card-info card-info card-section">
+            <div class="custom-card-title h5">
               <a href="#">Восприятие текста изучается в рамках лингвистики текста и психолингвистики.</a>
             </div>
             <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие
@@ -427,11 +460,11 @@
         </div>
       </div>
       <!-- /.cell -->
-      <div class="cell large-6">
-        <div class="info-item card">
-          <a href="#" class="info-item-picture"><img src="assets/img/articles/2.jpg" alt=""></a>
-          <div class="info-item-content card-section">
-            <div class="info-item-title h5">
+      <div class="section-part cell medium-6">
+        <div class="custom-card card">
+          <a href="#" class="custom-card-picture"><img src="assets/img/articles/2.jpg" alt=""></a>
+          <div class="articles-card-info card-info card-section">
+            <div class="custom-card-title h5">
               <a href="#">Так, например, И. Р. Гальперин определяет текст следующим образом</a>
             </div>
             <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.</p>
@@ -442,11 +475,11 @@
     </div>
     <!-- /.grid-x -->
     <div class="section">
-      <div class="h2">О компании</div>
-      <div class="content-card">
-        <div class="title bordered primary h2">Богатая история, многолетний опыт и устремленность в будущее – вот что
+      <div class="section-part-title section-title h2">О компании</div>
+      <div class="about-content-card content-card">
+        <p class="lead title bordered primary">Богатая история, многолетний опыт и устремленность в будущее – вот что
           можно назвать главными характеристиками ПАО «Краснокамский завод металлических сеток» - торговая марка
-          ROSSET.</div>
+          ROSSET.</p>
         <p>Сегодня это одно из крупнейших предприятий в Европе в своей отрасли. И единственное в России и СНГ,
           производящее формующие сетки для бумагоделательных машин.За многолетнюю историю работы предприятия, берущую
           свое начало в 1942 году, освоен выпуск более 180 видов продукции. Основное направление: производство и
@@ -463,55 +496,79 @@
     </div>
     <!-- /.section -->
     <div class="section">
-      <div class="h2">Нам доверяют</div>
+      <div class="section-part-title section-title h2">Нам доверяют</div>
       <div class="grid-container full">
         <div class="partners-blocks blocks grid-x grid-margin-x small-up-2 medium-up-3 large-up-6 text-center">
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/1.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/1.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/2.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/2.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/3.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/3.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/4.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/4.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/5.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/5.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/6.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/6.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/7.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/7.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/8.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/8.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/9.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/9.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/10.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/10.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/11.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/11.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
-          <div class="blocks-cell cell">
-            <a href="#" class="partners-item"><img src="assets/img/partners/12.png" alt=""></a>
+          <div class="partners-blocks-cell blocks-cell cell">
+            <a href="#" class="partners-item blocks-card card">
+              <img src="assets/img/partners/12.png" alt="">
+            </a>
           </div>
           <!-- /.cell -->
         </div>
@@ -529,7 +586,7 @@
     <div class="grid-x grid-padding-x">
       <div class="footer-contact-col footer-col cell large-3">
         <div class="grid-x grid-padding-x">
-          <div class="cell medium-4 large-12">
+          <div class="cell">
             <a href="#" class="footer-logo logo">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.15 104.33"
                 width="171" height="147">
@@ -568,32 +625,32 @@
             </a>
           </div>
           <!-- /.cell -->
-          <div class="cell medium-3 large-12">
+          <div class="cell medium-6 large-12 medium-order-1">
             <div class="footer-callback callback">
-              <p class="callback-text">
+              <div class="callback-text">
                 <a href="tel:+78003508403" class="footer-phone-link phone-link">
-                  <span class="phone-link-text show-for-medium">8&nbsp;800&nbsp;350-84-03</span>
+                  <span class="phone-link-text">8&nbsp;800&nbsp;350-84-03</span>
                 </a>
-              </p>
-              <a href="#" class="callback-link">Заказать звонок</a>
+              </div>
+              <a href="#" class="footer-callback-link callback-link">Заказать звонок</a>
             </div>
           </div>
           <!-- /.cell -->
-          <div class="cell medium-5 large-12">
-            <div class="footer-infoblock">
+          <div class="cell medium-6 large-12 medium-order-3 large-order-2">
+            <div class="contact-infoblock footer-infoblock">
               <p>Россия, Пермский край, <br>г.Краснокамск, ул.Шоссейная, 23</p>
-              <a href="#">Показать на карте</a>
+              <a href="#" class="footer-callback-link">Показать на карте</a>
             </div>
           </div>
           <!-- /.cell -->
-          <div class="cell medium-3 medium-offset-4 large-12 large-offset-0">
+          <div class="cell medium-6 large-12 medium-order-2 large-order-3">
             <div class="mail-infoblock footer-infoblock">
               <a href="mailto:sales@rosset-kzms.ru">sales@rosset-kzms.ru</a><br>
               E-mail
             </div>
           </div>
           <!-- /.cell -->
-          <div class="cell medium-5 large-12">
+          <div class="cell medium-6 large-12 medium-order-4">
             <ul class="scl-menu menu simple align-middle">
               <li>
                 <a href="#">
@@ -693,7 +750,7 @@
   </div>
   <!-- /.off-canvas-wrapper -->
 
-  <div class="sprite-container"> <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 68 68" id="advantage-1" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="Слой 1"><path d="M42.5 64.5a3 3 0 0 1-3 3h-36a3 3 0 0 1-3-3v-36a3 3 0 0 1 3-3h36a3 3 0 0 1 3 3zm-2 0v-36a1 1 0 0 0-1-1h-36a1 1 0 0 0-1 1v36a1 1 0 0 0 1 1h36a1 1 0 0 0 1-1zm7-45.42l8.29-8.29a1 1 0 0 1 1.41 1.41l-8.29 8.3h5.59a1 1 0 0 1 0 2h-8a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0zM33.5.5a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm8 40a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-40-8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm40 16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-32a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/><path d="M39.5 68h-36A3.5 3.5 0 0 1 0 64.5v-36A3.5 3.5 0 0 1 3.5 25h36a3.5 3.5 0 0 1 3.5 3.5v36a3.5 3.5 0 0 1-3.5 3.5zm-36-42A2.5 2.5 0 0 0 1 28.5v36A2.5 2.5 0 0 0 3.5 67h36a2.5 2.5 0 0 0 2.5-2.5v-36a2.5 2.5 0 0 0-2.5-2.5zm36 40h-36A1.5 1.5 0 0 1 2 64.5v-36A1.5 1.5 0 0 1 3.5 27h36a1.5 1.5 0 0 1 1.5 1.5v36a1.5 1.5 0 0 1-1.5 1.5zm-36-38a.5.5 0 0 0-.5.5v36a.5.5 0 0 0 .5.5h36a.5.5 0 0 0 .5-.5v-36a.5.5 0 0 0-.5-.5zm62 17a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-8 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-8 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm16-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm0-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-11-2h-8a1.5 1.5 0 0 1-1.5-1.5v-8a1.5 1.5 0 0 1 3 0v4.38l7.44-7.44a1.5 1.5 0 0 1 2.12 2.12L50.12 20h4.38a1.5 1.5 0 0 1 0 3zm-8-10a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-6.79l9.15-9.15a.5.5 0 0 0-.71-.71L47 20.29V13.5a.5.5 0 0 0-.5-.5zm19 8a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-40 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm40-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 65.5 9zm-40 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 25.5 9zm40-4A2.5 2.5 0 1 1 68 2.5 2.5 2.5 0 0 1 65.5 5zm0-4A1.5 1.5 0 1 0 67 2.5 1.5 1.5 0 0 0 65.5 1zm-8 4A2.5 2.5 0 1 1 60 2.5 2.5 2.5 0 0 1 57.5 5zm0-4A1.5 1.5 0 1 0 59 2.5 1.5 1.5 0 0 0 57.5 1zm-8 4A2.5 2.5 0 1 1 52 2.5 2.5 2.5 0 0 1 49.5 5zm0-4A1.5 1.5 0 1 0 51 2.5 1.5 1.5 0 0 0 49.5 1zm-8 4A2.5 2.5 0 1 1 44 2.5 2.5 2.5 0 0 1 41.5 5zm0-4A1.5 1.5 0 1 0 43 2.5 1.5 1.5 0 0 0 41.5 1zm-8 4A2.5 2.5 0 1 1 36 2.5 2.5 2.5 0 0 1 33.5 5zm0-4A1.5 1.5 0 1 0 35 2.5 1.5 1.5 0 0 0 33.5 1zm-8 4A2.5 2.5 0 1 1 28 2.5 2.5 2.5 0 0 1 25.5 5zm0-4A1.5 1.5 0 1 0 27 2.5 1.5 1.5 0 0 0 25.5 1z"/></g></g></symbol><symbol viewBox="0 0 62 62" id="advantage-2" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ba"><path d="M0 0h62v62H0z"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><path d="M48 22H14v12h34zm-2 10H16v-8h30zm12-5h2v16h-2zm-4-4v2h2v2h-2v2h2v12h-2v2h2v3h-2v2h4v-3h4V25h-4v-2zM2 27h2v16H2zm2-4v2H0v20h4v3h4v-2H6v-3h2v-2H6V29h2v-2H6v-2h2v-2zm26 35h18V48H30zm2-8h14v6H32z"/><path d="M38 52h2v2h-2zm4 0h2v2h-2zm-8 0h2v2h-2zm-6-15H14v14h14zm-2 4h-2v-2h2zm-6 2h2v2h-2zm2 6h-2v-2h2zm-4-4h-2v-2h2zm2-6h2v2h-2zm4 4h2v2h-2zm-6-2h-2v-2h2zm-2 6h2v2h-2zm8 0h2v2h-2zm8-9h2v2h-2zm6 0h2v2h-2zm6 0h2v2h-2zm-12 6h2v2h-2zm6 0h2v2h-2zm6 0h2v2h-2z"/><g clip-path="url(#ba)"><path d="M31 31a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1m-9 4a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1m18 4a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1"/><path d="M44 11.19a6 6 0 1 0-6 0V18h-7v-4h-5V2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v12h-5v4h-3v44h42V18h-8zM41 2a4 4 0 1 1-4 4 4 4 0 0 1 4-4m-1 9.91a5.6 5.6 0 0 0 2 0V18h-2zM24 8h-4V6h4zm0-4h-4V2h4zm-4 6h4v4h-4zm-5 6h14v2H15zm35 44H12V20h38z"/></g></g></g></symbol><symbol viewBox="0 0 432.67 468" id="advantage-3" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ca"><path d="M0 0h432.67v468H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ca)" data-name="Layer 1"><path d="M62.61 185.74a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40h99.77a40 40 0 0 0 40-40v-83.14a40 40 0 0 0-40-40zm43.58 20h17.93v33.09L106.19 253zm76.19 20v83.14a20 20 0 0 1-20 20H62.61a20 20 0 0 1-20-20v-83.14a20 20 0 0 1 20-20h23.58v67.93a10 10 0 0 0 16.2 7.84l37.93-30a10 10 0 0 0 3.8-7.84v-37.93h18.26a20 20 0 0 1 20 20m87.92 123.14h105.09a40 40 0 0 0 40-40v-83.14a40 40 0 0 0-40-40H270.3a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40m43.58-143.14h23.26v32.7l-23.26 16.13zm-63.58 20a20 20 0 0 1 20-20h23.58v67.93a10 10 0 0 0 15.7 8.22l43.26-30a10 10 0 0 0 4.3-8.22v-37.93h18.26a20 20 0 0 1 20 20v83.14a20 20 0 0 1-20 20H270.3a20 20 0 0 1-20-20zm58.58-102.6V40a40 40 0 0 0-40-40H163.79a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40h105.09a40 40 0 0 0 40-40M202 20h23.3v29.7L202 65.83zm-58.21 103.14V40a20 20 0 0 1 20-20H182v64.93a10 10 0 0 0 15.7 8.22l43.25-30a10 10 0 0 0 4.3-8.22V20h23.58a20 20 0 0 1 20 20v83.14a20 20 0 0 1-20 20H163.79a20 20 0 0 1-20-20M10 448a10 10 0 0 0 0 20h412.67a10 10 0 1 0 0-20h-59.23v-56.51h59.23a10 10 0 0 0 0-20H10a10 10 0 0 0 0 20h53.91V448zm73.91-56.51h259.53V448H83.91z"/></g></g></symbol><symbol viewBox="0 0 60 60" id="advantage-4" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="da"><path d="M0 0h60v60H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#da)" data-name="Layer 1"><path d="M20 49.48a9 9 0 1 0-6.33-2.62A9 9 0 0 0 20 49.48m-4.91-13.87a7 7 0 1 1-2 4.92 7 7 0 0 1 2-4.92"/><path d="M21.43 38.41L22.84 37a4.1 4.1 0 0 0-5.66 0l1.41 1.41a2 2 0 0 1 2.83 0"/><path d="M6 59.71a1 1 0 0 0 1.41 0l4.24-4.24a1 1 0 0 0 0-1.41l-.79-.79 1.59-1.58a13.56 13.56 0 1 0-4.08-4.41L6.58 49 6 48.39a1 1 0 0 0-1.41 0L.3 52.64a1 1 0 0 0 0 1.41zm5.88-27.31a11.5 11.5 0 1 1-3.37 8.13 11.5 11.5 0 0 1 3.37-8.13M9.4 49l1.41 1.42-1.41 1.43-.69-.69-.71-.73zm-4.16 1.5l.62.62 1.45 1.45 2.17 2.17-2.82 2.85-4.24-4.25zM59.9 13.31a1 1 0 0 0-.59-.81l-2.11-.93c-.1-.39-.22-.76-.35-1.11l1.17-2a1 1 0 0 0 0-1 15.34 15.34 0 0 0-2-2.74 1 1 0 0 0-1-.31l-2.22.51c-.29-.23-.59-.45-.9-.66l-.13-2.36a1 1 0 0 0-.57-.82A14.75 14.75 0 0 0 48 0a1 1 0 0 0-1 .33l-1.44 1.78a10.78 10.78 0 0 0-1.11 0L42.93.35A1 1 0 0 0 42 0a14.82 14.82 0 0 0-3.16 1.06 1 1 0 0 0-.58.82L38 4.25c-.31.21-.61.43-.9.66l-2.2-.51a1 1 0 0 0-1 .31 15.4 15.4 0 0 0-2 2.74 1 1 0 0 0 0 1l1.17 2c-.13.36-.24.72-.35 1.11l-2.11.93a1 1 0 0 0-.59.81 14.86 14.86 0 0 0 0 3.39 1 1 0 0 0 .59.81l2.11.93c.1.39.22.76.35 1.11l-1.17 2a1 1 0 0 0 0 1 15.39 15.39 0 0 0 2 2.74 1 1 0 0 0 1 .31l2.22-.51c.29.23.59.45.9.66l.22 2.34a1 1 0 0 0 .57.82A14.83 14.83 0 0 0 42 30a1 1 0 0 0 1-.33l1.52-1.76a10.78 10.78 0 0 0 1.11 0l1.52 1.76a1 1 0 0 0 .76.35h.2a14.83 14.83 0 0 0 3.16-1.06 1 1 0 0 0 .58-.82l.15-2.38c.31-.21.61-.43.9-.66l2.22.51a1 1 0 0 0 1-.31 15.35 15.35 0 0 0 2-2.74 1 1 0 0 0 0-1l-1.17-2c.13-.35.24-.72.35-1.11l2.11-.93a1 1 0 0 0 .59-.81 15 15 0 0 0 0-3.39zm-1.9 2.6l-2 .89a1 1 0 0 0-.57.69 10.79 10.79 0 0 1-.55 1.76 1 1 0 0 0 .06.88L56 22.06a13.57 13.57 0 0 1-1 1.46L52.84 23a1 1 0 0 0-.88.23 10.75 10.75 0 0 1-1.45 1.07 1 1 0 0 0-.47.76l-.21 2.24a12.85 12.85 0 0 1-1.64.56l-1.44-1.68a1 1 0 0 0-.84-.34 11.05 11.05 0 0 1-1.8 0 1 1 0 0 0-.84.34l-1.45 1.68a12.81 12.81 0 0 1-1.64-.56L40 25.09a1 1 0 0 0-.47-.76A10.71 10.71 0 0 1 38 23.26a1 1 0 0 0-.88-.23l-2.12.49a13.36 13.36 0 0 1-1-1.46l1.12-1.93a1 1 0 0 0 .06-.88 10.83 10.83 0 0 1-.55-1.76 1 1 0 0 0-.57-.69l-2-.89v-1.82l2-.89a1 1 0 0 0 .57-.69 10.89 10.89 0 0 1 .55-1.76 1 1 0 0 0-.06-.88L34 7.94a13.51 13.51 0 0 1 1-1.46l2.17.52a1 1 0 0 0 .83-.26 10.74 10.74 0 0 1 1.5-1.07 1 1 0 0 0 .5-.76l.21-2.24a12.65 12.65 0 0 1 1.64-.56l1.44 1.68a1 1 0 0 0 .84.34 11 11 0 0 1 1.8 0 1 1 0 0 0 .84-.34l1.43-1.68a12.69 12.69 0 0 1 1.64.56L50 4.91a1 1 0 0 0 .47.76A10.57 10.57 0 0 1 52 6.74a1 1 0 0 0 .89.23L55 6.48a13.23 13.23 0 0 1 1 1.46l-1.11 1.93a1 1 0 0 0-.06.88 10.77 10.77 0 0 1 .55 1.76 1 1 0 0 0 .57.69l2 .89v1.82z"/><path d="M45 6a9 9 0 1 0 9 9 9 9 0 0 0-9-9m0 16a7 7 0 1 1 7-7 7 7 0 0 1-7 7M.68 15.27l1.74.73c.08.29.16.57.26.84l-1 1.67a1 1 0 0 0 0 1 13.25 13.25 0 0 0 1.7 2.38 1 1 0 0 0 1 .31l1.84-.42c.21.17.44.34.67.49l.18 1.94a1 1 0 0 0 .58.82 12.81 12.81 0 0 0 2.74.92 1 1 0 0 0 1-.33l1.26-1.45a8.09 8.09 0 0 0 .82 0l1.26 1.45a1 1 0 0 0 1 .33 12.8 12.8 0 0 0 2.74-.92 1 1 0 0 0 .58-.82l.18-1.94q.35-.24.67-.49l1.84.42a1 1 0 0 0 1-.31 13.2 13.2 0 0 0 1.7-2.38 1 1 0 0 0 0-1l-1-1.67c.09-.27.18-.55.26-.84l1.74-.77a1 1 0 0 0 .59-.81 13 13 0 0 0 0-2.93 1 1 0 0 0-.59-.81L23.58 10c-.08-.29-.17-.57-.26-.84l1-1.67a1 1 0 0 0 0-1 13.23 13.23 0 0 0-1.7-2.38 1 1 0 0 0-1-.31l-1.82.4c-.21-.17-.44-.34-.67-.49L19 1.76a1 1 0 0 0-.57-.82 12.79 12.79 0 0 0-2.8-.94 1 1 0 0 0-1 .33L13.42 1.8a8.09 8.09 0 0 0-.82 0L11.34.35a1 1 0 0 0-1-.33 12.8 12.8 0 0 0-2.7.92 1 1 0 0 0-.58.82L6.88 3.7c-.23.16-.46.32-.67.49l-1.83-.41a1 1 0 0 0-1 .31A13.22 13.22 0 0 0 1.7 6.46a1 1 0 0 0 0 1l1 1.67c-.1.27-.18.55-.26.84l-1.74.77a1 1 0 0 0-.59.81 13 13 0 0 0 0 2.93 1 1 0 0 0 .59.81m1.35-3l1.65-.73a1 1 0 0 0 .57-.69 9.29 9.29 0 0 1 .46-1.48 1 1 0 0 0-.06-.88L3.74 7a11.37 11.37 0 0 1 .78-1.09l1.73.4A1 1 0 0 0 7.13 6a9.2 9.2 0 0 1 1.23-.91 1 1 0 0 0 .47-.76L9 2.53a11.28 11.28 0 0 1 1.22-.41l1.18 1.37a1 1 0 0 0 .84.34 9.36 9.36 0 0 1 1.52 0 1 1 0 0 0 .84-.34l1.18-1.37a11.44 11.44 0 0 1 1.22.41l.17 1.84a1 1 0 0 0 .47.76 9.07 9.07 0 0 1 1.22.9 1 1 0 0 0 .89.23l1.73-.4a10.91 10.91 0 0 1 .78 1.09l-.91 1.58a1 1 0 0 0-.06.88 9.29 9.29 0 0 1 .46 1.48 1 1 0 0 0 .57.69l1.65.73v1.36l-1.65.73a1 1 0 0 0-.57.69 9.23 9.23 0 0 1-.46 1.48 1 1 0 0 0 .06.88l.92 1.55a11.24 11.24 0 0 1-.78 1.09l-1.73-.4a1 1 0 0 0-.89.23 9 9 0 0 1-1.23.9 1 1 0 0 0-.47.76L17 23.46a11.28 11.28 0 0 1-1.22.42l-1.18-1.37a1 1 0 0 0-.84-.34 9.59 9.59 0 0 1-1.52 0 1 1 0 0 0-.84.34l-1.18 1.37A11.44 11.44 0 0 1 9 23.47l-.17-1.84a1 1 0 0 0-.47-.76A9 9 0 0 1 7.13 20a1 1 0 0 0-.89-.23l-1.73.4a10.91 10.91 0 0 1-.78-1.09l.91-1.58a1 1 0 0 0 .06-.88 9.33 9.33 0 0 1-.46-1.49 1 1 0 0 0-.57-.69L2 13.68v-1.36"/><path d="M13 21a8 8 0 1 0-8-8 8 8 0 0 0 8 8m0-14a6 6 0 1 1-6 6 6 6 0 0 1 6-6m31.28 9.6l-2.61-2.35-1.34 1.49 3.33 3a1 1 0 0 0 1.4-.06l5.67-6-1.45-1.37z"/><path d="M12 16a1 1 0 0 0 .71-.29l4-4-1.41-1.42-3.3 3.3-1.29-1.29-1.41 1.41 2 2a1 1 0 0 0 .7.29m47.34 33.16a1 1 0 0 0 .59-.81 11.9 11.9 0 0 0 0-2.71 1 1 0 0 0-.59-.81l-1.56-.69c-.07-.24-.14-.47-.22-.7l.87-1.5a1 1 0 0 0 0-1 12.34 12.34 0 0 0-1.57-2.19 1 1 0 0 0-1-.31l-1.64.38-.56-.41-.16-1.74a1 1 0 0 0-.58-.82 11.69 11.69 0 0 0-2.49-.85 1 1 0 0 0-1 .33l-1.12 1.3h-.68l-1.12-1.3a1 1 0 0 0-1-.33 11.73 11.73 0 0 0-2.53.85 1 1 0 0 0-.58.82l-.16 1.74-.56.41-1.64-.38a1 1 0 0 0-1 .31A12.33 12.33 0 0 0 37.57 41a1 1 0 0 0 0 1l.87 1.5c-.08.23-.15.46-.22.7l-1.56.69a1 1 0 0 0-.59.81 11.9 11.9 0 0 0 0 2.71 1 1 0 0 0 .59.8l1.56.69c.07.24.14.47.22.7l-.87 1.5a1 1 0 0 0 0 1 12.2 12.2 0 0 0 1.57 2.2 1 1 0 0 0 1 .31l1.64-.38.56.41.16 1.74a1 1 0 0 0 .58.81 11.77 11.77 0 0 0 2.53.85 1 1 0 0 0 1-.33l1.12-1.3h.68l1.12 1.3a1 1 0 0 0 1 .33 11.76 11.76 0 0 0 2.47-.91 1 1 0 0 0 .58-.81l.16-1.74.56-.41 1.64.38a1 1 0 0 0 1-.31A12.25 12.25 0 0 0 58.43 53a1 1 0 0 0 0-1l-.87-1.5c.08-.22.15-.46.22-.7zm-2.82-.94a1 1 0 0 0-.57.69 8.3 8.3 0 0 1-.42 1.35 1 1 0 0 0 .06.88l.81 1.4a10.27 10.27 0 0 1-.65.91l-1.53-.35a1 1 0 0 0-.88.22 8.14 8.14 0 0 1-1.11.82 1 1 0 0 0-.47.76l-.15 1.63a9.76 9.76 0 0 1-1 .35l-1-1.22a1 1 0 0 0-.84-.34 8.56 8.56 0 0 1-1.38 0 1 1 0 0 0-.84.34l-1 1.22a9.59 9.59 0 0 1-1-.35l-.15-1.63a1 1 0 0 0-.47-.76 8.37 8.37 0 0 1-1.11-.82 1 1 0 0 0-.89-.22l-1.53.35a10.47 10.47 0 0 1-.65-.91l.81-1.4a1 1 0 0 0 .06-.88 8.4 8.4 0 0 1-.42-1.35 1 1 0 0 0-.57-.69L38 47.57v-1.14l1.47-.65a1 1 0 0 0 .57-.69 8.33 8.33 0 0 1 .42-1.35 1 1 0 0 0-.06-.88l-.81-1.4a10.78 10.78 0 0 1 .65-.91l1.53.35a1 1 0 0 0 .89-.22 8.1 8.1 0 0 1 1.11-.82 1 1 0 0 0 .47-.76l.15-1.63a10.07 10.07 0 0 1 1-.34l1.05 1.22a1 1 0 0 0 .84.34 8.55 8.55 0 0 1 1.38 0 1 1 0 0 0 .84-.34l1-1.22a10 10 0 0 1 1 .34l.15 1.63a1 1 0 0 0 .47.76 8.13 8.13 0 0 1 1.11.82 1 1 0 0 0 .88.22l1.53-.35a10.57 10.57 0 0 1 .65.91l-.81 1.4a1 1 0 0 0-.06.88 8.43 8.43 0 0 1 .42 1.35 1 1 0 0 0 .57.69l1.47.65v1.14z"/><path d="M48 40a7 7 0 1 0 7 7 7 7 0 0 0-7-7m0 12a5 5 0 1 1 5-5 5 5 0 0 1-5 5"/><path d="M49.42 44.17L48 45.59l-1.41-1.42-1.42 1.42L46.59 47l-1.42 1.41 1.42 1.42L48 48.41l1.42 1.42 1.41-1.42L49.42 47l1.41-1.41-1.41-1.42z"/></g></g></symbol><symbol viewBox="0 0 60 60" id="advantage-5" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ea"><path d="M0 0h60v60H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ea)" data-name="Layer 1"><path d="M9 60h22v-2H9a7 7 0 0 1 0-14h6v-2H9a9 9 0 0 0-7 3.36V15a7 7 0 0 1 7-7h4V6H9a9 9 0 0 0-9 9v36a9 9 0 0 0 9 9"/><path d="M7 51a5 5 0 1 0 5-5 5 5 0 0 0-5 5m8 0a3 3 0 1 1-3-3 3 3 0 0 1 3 3m9 5a5 5 0 1 0-5-5 5 5 0 0 0 5 5m0-8a3 3 0 1 1-3 3 3 3 0 0 1 3-3m12-2a5 5 0 1 0 5 5 5 5 0 0 0-5-5m0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3m17-3a5 5 0 1 0-5 5 5 5 0 0 0 5-5m-8 0a3 3 0 1 1 3 3 3 3 0 0 1-3-3m-28-9h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm12 16h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2z"/><path d="M51 6H19v2h32a7 7 0 0 1 7 7v30.36A9 9 0 0 0 51 42H33v2h18a7 7 0 0 1 0 14h-6v2h6a9 9 0 0 0 9-9V15a9 9 0 0 0-9-9"/><path d="M40 38a1 1 0 0 0 1-1V22a1 1 0 0 0-1-1H30a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1zm-1-2h-8v-8h8zm-8-13h8v3h-8zm23 15a1 1 0 0 0 1-1V22a1 1 0 0 0-1-1H44a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1zm-1-2h-8v-8h8zm-8-13h8v3h-8zM15 0v13h-4a1 1 0 0 0-.71.29l-4 4A1 1 0 0 0 6 18v8a1 1 0 0 0 .4.8l3.6 2.7V34a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4.5l3.6-2.7a1 1 0 0 0 .4-.8v-8a1 1 0 0 0-.29-.71l-4-4A1 1 0 0 0 21 13h-4V0zm5 23h-8v-3h8zm0 10h-8v-8h8v8zm4-14.59v7.09L22 27v-8a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v8l-2-1.5v-7.09L11.41 15h9.17z"/></g></g></symbol><symbol viewBox="0 0 90.01 90.01" id="advantage-6" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="fa"><path d="M0 0h90.01v90.01H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#fa)" data-name="Layer 1"><path d="M29.74 56.91a2 2 0 0 0 1.41-.59l2.92-2.92a2.001 2.001 0 0 0-2.83-2.83l-2.92 2.92a2 2 0 0 0 1.41 3.41M26.64 58a2 2 0 0 0-2.83 0L7.54 74.28a2.001 2.001 0 1 0 2.83 2.83l16.27-16.27a2 2 0 0 0 0-2.83m9.97-2.08L22.47 70.07a2.001 2.001 0 1 0 2.83 2.83l14.14-14.14a2.001 2.001 0 1 0-2.83-2.83M17.32 75.22l-4.42 4.42a2.001 2.001 0 0 0 2.83 2.83L20.15 78a2.001 2.001 0 0 0-2.83-2.83"/><path d="M15.07 18.54a2.87 2.87 0 0 1-4 0l-6.85-6.82-.22-.18-.15-.11-.17-.09-.2-.09H2.17l-.17.08-.15.08-.18.11-.15.12-.1.08v.05l-.13.16-.11.16-.18.17c0 .07-.06.13-.09.2v.06a18 18 0 0 0 22.71 22.82L31 42.71a5.73 5.73 0 0 0-3.44 1.63L3.27 68.64a8.57 8.57 0 0 0 0 12.1l6 6a8.57 8.57 0 0 0 12.1 0l24.3-24.29A5.73 5.73 0 0 0 47.3 59l7.37 7.37A18.07 18.07 0 0 0 77.5 89.11h.06l.19-.09.17-.09.15-.11.17-.14.07-.08.14-.17.1-.16a1.69 1.69 0 0 0 .09-.17 1.63 1.63 0 0 0 .07-.18 1.8 1.8 0 0 0 .06-.19 1.63 1.63 0 0 0 0-.18v-.2a1.51 1.51 0 0 0 0-.19v-.4a.9.9 0 0 0 0-.11v-.06c0-.07-.06-.13-.09-.19l-.09-.17-.12-.23-.14-.17L71.48 79a2.87 2.87 0 0 1 0-4l3.42-3.42a2.87 2.87 0 0 1 4 0l6.81 6.81.17.14.15.11.16.09.2.09h.12a2 2 0 0 0 .56.09 2 2 0 0 0 .54-.08h.11a1.93 1.93 0 0 0 .48-.24l.08-.06a2.07 2.07 0 0 0 .2-.17 1.92 1.92 0 0 0 .14-.17l.08-.09a2.06 2.06 0 0 0 .26-.5 18.08 18.08 0 0 0-22.63-22.89l-12-12 21.81-21.82 4.5.31h.14a2 2 0 0 0 1.75-1l7.22-13a2 2 0 0 0-.33-2.38l-.48-.49-3.21-3.26-.49-.48a2 2 0 0 0-2.38-.34l-13 7.22a2 2 0 0 0-1 1.89l.32 4.5-21.87 21.83-12-12A18.08 18.08 0 0 0 12.47 1h-.06l-.2.09-.21.06-.15.11-.17.14-.07.09-.14.17-.1.16-.09.18-.07.18q0 .09-.05.18a1.68 1.68 0 0 0 0 .19 1.39 1.39 0 0 0 0 .19 1.79 1.79 0 0 0 0 .19v.57a2 2 0 0 0 .09.19 1.72 1.72 0 0 0 .09.17l.1.14.14.18 6.81 6.81a2.87 2.87 0 0 1 0 4zm27.77 41.08l-24.29 24.3a4.56 4.56 0 0 1-6.44 0l-6-6a4.56 4.56 0 0 1 0-6.44l24.28-24.31a1.79 1.79 0 0 1 2.53 0l1.61 1.61A2 2 0 0 0 37.36 46l-.29-.29 1.31-1.31a1.42 1.42 0 0 1 2 0l.54.54 4.19 4.19.54.54a1.42 1.42 0 0 1 0 2l-1.3 1.3L42 50.64a2.001 2.001 0 0 0-2.83 2.83l3.62 3.62a1.8 1.8 0 0 1 0 2.53m21.57-1.18a1.82 1.82 0 0 0 .19.15l.11.08a2 2 0 0 0 1.12.35 2 2 0 0 0 .8-.17 14.08 14.08 0 0 1 19.3 14l-4.12-4.15a6.87 6.87 0 0 0-9.7 0l-3.42 3.41a6.87 6.87 0 0 0 0 9.7L72.81 86a14.08 14.08 0 0 1-14-19.25 2 2 0 0 0 .53-.37L61 64.64a2.001 2.001 0 1 0-2.84-2.82L57 63l-8.56-8.5a5.41 5.41 0 0 0 .76-6.67l2.25-2.25zm19.07-54l2.05 2.05-5.83 10.63-4.15-.29h-.59l-.27.08h-.08l-.27.14h-.06a2 2 0 0 0-.26.21L46.52 44.85l-1.36-1.36L72.6 16.05a2.06 2.06 0 0 0 .19-.23l.06-.09a2.38 2.38 0 0 0 .12-.24l.05-.12a2.15 2.15 0 0 0 .07-.23v-.15a2 2 0 0 0 0-.21v-.27l-.29-4.15zM21.31 8.25l-4.16-4.16a14.07 14.07 0 0 1 14.08 19.08 2 2 0 0 0-.27.22l-1.7 1.71a2.001 2.001 0 1 0 2.84 2.82L33 27l11.48 11.52-2.25 2.25a5.42 5.42 0 0 0-6.68.77l-9.95-9.89a2 2 0 0 0-2.2-.47A14.08 14.08 0 0 1 4 17.2l4.2 4.16a6.87 6.87 0 0 0 9.7 0l3.41-3.42a6.87 6.87 0 0 0 0-9.7"/></g></g></symbol><symbol viewBox="0 0 14.25 9.25" id="angle-down" xmlns="http://www.w3.org/2000/svg"><defs><style>.gcls-1{fill-rule:evenodd;filter:url(#gfilter)}</style><filter id="gfilter" x=".75" y=".75" width="14.25" height="9.25" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#28245d"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><path id="gПрямоугольник_7" data-name="Прямоугольник 7" class="gcls-1" d="M.757 2.172L2.172.757l7.071 7.071-1.415 1.415zm14.236.333l-1.331-1.5-6.655 7.49 1.331 1.5z" transform="translate(-.75 -.75)"/></symbol><symbol viewBox="0 0 12 21" id="fcb" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M7.8 21v-9.6h3.52l.53-3.72H7.8V5.3c0-1.08.32-1.82 2-1.82H12V.14C11.62.09 10.33 0 8.83 0 5.7 0 3.56 1.73 3.56 4.93v2.76H0v3.72h3.56V21z" data-name="Layer 1"/></g></symbol><symbol viewBox="0 0 28 28" id="magnifier" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ia"><path d="M0 0h28v28H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ia)" data-name="Layer 1"><path d="M26.3 28a1.66 1.66 0 0 1-1.2-.5l-6.9-6.9a11.88 11.88 0 1 1 2.4-2.5l6.9 6.9a1.69 1.69 0 0 1 0 2.4 2 2 0 0 1-1.2.6M11.4 3.5a7.9 7.9 0 1 0 7.9 7.9 7.85 7.85 0 0 0-7.9-7.9"/></g></g></symbol><symbol viewBox="0 0 1000 1000" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M772.3 989.9c21.8 0 217.7-144.8 217.7-163.3S770.8 670 751.8 670s-82.6 76.3-99.8 84.8c-17.2 8.5-124.4 5.4-243.9-114-119.4-119.4-160.2-256.9-160.2-278.5 0-21.6 99.6-88.3 102.4-104C353 242.7 218.9 10 197.2 10 175.4 10 10 211 10 227.7s15.1 232.2 287.9 505c272.9 272.7 452.5 257.1 474.4 257.2z"/></symbol><symbol viewBox="0 0 272.13 159.33" id="vk" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M226.06 78.12s35.86-50.58 39.42-67.2c1.19-5.94-1.43-9.26-7.6-9.26h-31.11c-7.12 0-9.74 3.09-11.87 7.6 0 0-16.82 35.83-37.28 58.42-6.57 7.3-9.91 9.5-13.54 9.5-2.92 0-4.27-2.44-4.27-9V10.45c0-8.07-.95-10.45-7.6-10.45h-49.87c-3.8 0-6.17 2.21-6.17 5.22 0 7.6 11.64 9.32 11.64 29.92v42.5c0 8.55-.48 11.87-4.51 11.87-10.69.01-36.1-36.79-50.3-78.59C50.1 2.38 47 0 38.94 0H7.84C3.32 0 0 3.09 0 7.6c0 8.31 9.74 46.78 48 98.31 25.64 34.67 59.36 53.43 89.76 53.43 18.52 0 23-3.09 23-10.92v-26.6c0-6.65 2.61-9.5 6.41-9.5 4.27 0 11.82 1.37 29.44 18.76 20.9 19.95 22.32 28.26 33.72 28.26h34.91c3.56 0 6.89-1.66 6.89-7.6 0-7.84-10.21-21.85-25.88-38.47-6.41-8.55-16.86-17.81-20.18-22.08-4.76-4.99-3.34-7.84-.01-13.07z" data-name="Layer 1"/></g></symbol><symbol viewBox="0 0 278.33 188.33" id="ytb" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M225.33 0H53A53 53 0 0 0 0 53v82.33a53 53 0 0 0 53 53h172.33a53 53 0 0 0 53-53V53a53 53 0 0 0-53-53m-112.5 137.33V51.6l73 42.87z" data-name="Layer 1"/></g></symbol></svg> </div>
+  <div class="sprite-container"> <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 68 68" id="advantage-1" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><g data-name="Слой 1"><path d="M42.5 64.5a3 3 0 0 1-3 3h-36a3 3 0 0 1-3-3v-36a3 3 0 0 1 3-3h36a3 3 0 0 1 3 3zm-2 0v-36a1 1 0 0 0-1-1h-36a1 1 0 0 0-1 1v36a1 1 0 0 0 1 1h36a1 1 0 0 0 1-1zm7-45.42l8.29-8.29a1 1 0 0 1 1.41 1.41l-8.29 8.3h5.59a1 1 0 0 1 0 2h-8a1 1 0 0 1-1-1v-8a1 1 0 0 1 2 0zM33.5.5a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm8 40a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-8 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm16 0a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm-40-8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0 8a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm40 16a2 2 0 1 1-2 2 2 2 0 0 1 2-2zm0-32a2 2 0 1 1-2 2 2 2 0 0 1 2-2z"/><path d="M39.5 68h-36A3.5 3.5 0 0 1 0 64.5v-36A3.5 3.5 0 0 1 3.5 25h36a3.5 3.5 0 0 1 3.5 3.5v36a3.5 3.5 0 0 1-3.5 3.5zm-36-42A2.5 2.5 0 0 0 1 28.5v36A2.5 2.5 0 0 0 3.5 67h36a2.5 2.5 0 0 0 2.5-2.5v-36a2.5 2.5 0 0 0-2.5-2.5zm36 40h-36A1.5 1.5 0 0 1 2 64.5v-36A1.5 1.5 0 0 1 3.5 27h36a1.5 1.5 0 0 1 1.5 1.5v36a1.5 1.5 0 0 1-1.5 1.5zm-36-38a.5.5 0 0 0-.5.5v36a.5.5 0 0 0 .5.5h36a.5.5 0 0 0 .5-.5v-36a.5.5 0 0 0-.5-.5zm62 17a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-8 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-8 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm16-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm0-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-11-2h-8a1.5 1.5 0 0 1-1.5-1.5v-8a1.5 1.5 0 0 1 3 0v4.38l7.44-7.44a1.5 1.5 0 0 1 2.12 2.12L50.12 20h4.38a1.5 1.5 0 0 1 0 3zm-8-10a.5.5 0 0 0-.5.5v8a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-6.79l9.15-9.15a.5.5 0 0 0-.71-.71L47 20.29V13.5a.5.5 0 0 0-.5-.5zm19 8a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm-40 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5 1.5 1.5 0 0 0-1.5-1.5zm40-4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 65.5 9zm-40 4a2.5 2.5 0 1 1 2.5-2.5 2.5 2.5 0 0 1-2.5 2.5zm0-4a1.5 1.5 0 1 0 1.5 1.5A1.5 1.5 0 0 0 25.5 9zm40-4A2.5 2.5 0 1 1 68 2.5 2.5 2.5 0 0 1 65.5 5zm0-4A1.5 1.5 0 1 0 67 2.5 1.5 1.5 0 0 0 65.5 1zm-8 4A2.5 2.5 0 1 1 60 2.5 2.5 2.5 0 0 1 57.5 5zm0-4A1.5 1.5 0 1 0 59 2.5 1.5 1.5 0 0 0 57.5 1zm-8 4A2.5 2.5 0 1 1 52 2.5 2.5 2.5 0 0 1 49.5 5zm0-4A1.5 1.5 0 1 0 51 2.5 1.5 1.5 0 0 0 49.5 1zm-8 4A2.5 2.5 0 1 1 44 2.5 2.5 2.5 0 0 1 41.5 5zm0-4A1.5 1.5 0 1 0 43 2.5 1.5 1.5 0 0 0 41.5 1zm-8 4A2.5 2.5 0 1 1 36 2.5 2.5 2.5 0 0 1 33.5 5zm0-4A1.5 1.5 0 1 0 35 2.5 1.5 1.5 0 0 0 33.5 1zm-8 4A2.5 2.5 0 1 1 28 2.5 2.5 2.5 0 0 1 25.5 5zm0-4A1.5 1.5 0 1 0 27 2.5 1.5 1.5 0 0 0 25.5 1z"/></g></g></symbol><symbol viewBox="0 0 62 62" id="advantage-2" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ba"><path d="M0 0h62v62H0z"/></clipPath></defs><g data-name="Layer 2"><g data-name="Layer 1"><path d="M48 22H14v12h34zm-2 10H16v-8h30zm12-5h2v16h-2zm-4-4v2h2v2h-2v2h2v12h-2v2h2v3h-2v2h4v-3h4V25h-4v-2zM2 27h2v16H2zm2-4v2H0v20h4v3h4v-2H6v-3h2v-2H6V29h2v-2H6v-2h2v-2zm26 35h18V48H30zm2-8h14v6H32z"/><path d="M38 52h2v2h-2zm4 0h2v2h-2zm-8 0h2v2h-2zm-6-15H14v14h14zm-2 4h-2v-2h2zm-6 2h2v2h-2zm2 6h-2v-2h2zm-4-4h-2v-2h2zm2-6h2v2h-2zm4 4h2v2h-2zm-6-2h-2v-2h2zm-2 6h2v2h-2zm8 0h2v2h-2zm8-9h2v2h-2zm6 0h2v2h-2zm6 0h2v2h-2zm-12 6h2v2h-2zm6 0h2v2h-2zm6 0h2v2h-2z"/><g clip-path="url(#ba)"><path d="M31 31a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1m-9 4a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1m18 4a3 3 0 1 0-3-3 3 3 0 0 0 3 3m0-4a1 1 0 1 1-1 1 1 1 0 0 1 1-1"/><path d="M44 11.19a6 6 0 1 0-6 0V18h-7v-4h-5V2a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v12h-5v4h-3v44h42V18h-8zM41 2a4 4 0 1 1-4 4 4 4 0 0 1 4-4m-1 9.91a5.6 5.6 0 0 0 2 0V18h-2zM24 8h-4V6h4zm0-4h-4V2h4zm-4 6h4v4h-4zm-5 6h14v2H15zm35 44H12V20h38z"/></g></g></g></symbol><symbol viewBox="0 0 432.67 468" id="advantage-3" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ca"><path d="M0 0h432.67v468H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ca)" data-name="Layer 1"><path d="M62.61 185.74a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40h99.77a40 40 0 0 0 40-40v-83.14a40 40 0 0 0-40-40zm43.58 20h17.93v33.09L106.19 253zm76.19 20v83.14a20 20 0 0 1-20 20H62.61a20 20 0 0 1-20-20v-83.14a20 20 0 0 1 20-20h23.58v67.93a10 10 0 0 0 16.2 7.84l37.93-30a10 10 0 0 0 3.8-7.84v-37.93h18.26a20 20 0 0 1 20 20m87.92 123.14h105.09a40 40 0 0 0 40-40v-83.14a40 40 0 0 0-40-40H270.3a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40m43.58-143.14h23.26v32.7l-23.26 16.13zm-63.58 20a20 20 0 0 1 20-20h23.58v67.93a10 10 0 0 0 15.7 8.22l43.26-30a10 10 0 0 0 4.3-8.22v-37.93h18.26a20 20 0 0 1 20 20v83.14a20 20 0 0 1-20 20H270.3a20 20 0 0 1-20-20zm58.58-102.6V40a40 40 0 0 0-40-40H163.79a40 40 0 0 0-40 40v83.14a40 40 0 0 0 40 40h105.09a40 40 0 0 0 40-40M202 20h23.3v29.7L202 65.83zm-58.21 103.14V40a20 20 0 0 1 20-20H182v64.93a10 10 0 0 0 15.7 8.22l43.25-30a10 10 0 0 0 4.3-8.22V20h23.58a20 20 0 0 1 20 20v83.14a20 20 0 0 1-20 20H163.79a20 20 0 0 1-20-20M10 448a10 10 0 0 0 0 20h412.67a10 10 0 1 0 0-20h-59.23v-56.51h59.23a10 10 0 0 0 0-20H10a10 10 0 0 0 0 20h53.91V448zm73.91-56.51h259.53V448H83.91z"/></g></g></symbol><symbol viewBox="0 0 60 60" id="advantage-4" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="da"><path d="M0 0h60v60H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#da)" data-name="Layer 1"><path d="M20 49.48a9 9 0 1 0-6.33-2.62A9 9 0 0 0 20 49.48m-4.91-13.87a7 7 0 1 1-2 4.92 7 7 0 0 1 2-4.92"/><path d="M21.43 38.41L22.84 37a4.1 4.1 0 0 0-5.66 0l1.41 1.41a2 2 0 0 1 2.83 0"/><path d="M6 59.71a1 1 0 0 0 1.41 0l4.24-4.24a1 1 0 0 0 0-1.41l-.79-.79 1.59-1.58a13.56 13.56 0 1 0-4.08-4.41L6.58 49 6 48.39a1 1 0 0 0-1.41 0L.3 52.64a1 1 0 0 0 0 1.41zm5.88-27.31a11.5 11.5 0 1 1-3.37 8.13 11.5 11.5 0 0 1 3.37-8.13M9.4 49l1.41 1.42-1.41 1.43-.69-.69-.71-.73zm-4.16 1.5l.62.62 1.45 1.45 2.17 2.17-2.82 2.85-4.24-4.25zM59.9 13.31a1 1 0 0 0-.59-.81l-2.11-.93c-.1-.39-.22-.76-.35-1.11l1.17-2a1 1 0 0 0 0-1 15.34 15.34 0 0 0-2-2.74 1 1 0 0 0-1-.31l-2.22.51c-.29-.23-.59-.45-.9-.66l-.13-2.36a1 1 0 0 0-.57-.82A14.75 14.75 0 0 0 48 0a1 1 0 0 0-1 .33l-1.44 1.78a10.78 10.78 0 0 0-1.11 0L42.93.35A1 1 0 0 0 42 0a14.82 14.82 0 0 0-3.16 1.06 1 1 0 0 0-.58.82L38 4.25c-.31.21-.61.43-.9.66l-2.2-.51a1 1 0 0 0-1 .31 15.4 15.4 0 0 0-2 2.74 1 1 0 0 0 0 1l1.17 2c-.13.36-.24.72-.35 1.11l-2.11.93a1 1 0 0 0-.59.81 14.86 14.86 0 0 0 0 3.39 1 1 0 0 0 .59.81l2.11.93c.1.39.22.76.35 1.11l-1.17 2a1 1 0 0 0 0 1 15.39 15.39 0 0 0 2 2.74 1 1 0 0 0 1 .31l2.22-.51c.29.23.59.45.9.66l.22 2.34a1 1 0 0 0 .57.82A14.83 14.83 0 0 0 42 30a1 1 0 0 0 1-.33l1.52-1.76a10.78 10.78 0 0 0 1.11 0l1.52 1.76a1 1 0 0 0 .76.35h.2a14.83 14.83 0 0 0 3.16-1.06 1 1 0 0 0 .58-.82l.15-2.38c.31-.21.61-.43.9-.66l2.22.51a1 1 0 0 0 1-.31 15.35 15.35 0 0 0 2-2.74 1 1 0 0 0 0-1l-1.17-2c.13-.35.24-.72.35-1.11l2.11-.93a1 1 0 0 0 .59-.81 15 15 0 0 0 0-3.39zm-1.9 2.6l-2 .89a1 1 0 0 0-.57.69 10.79 10.79 0 0 1-.55 1.76 1 1 0 0 0 .06.88L56 22.06a13.57 13.57 0 0 1-1 1.46L52.84 23a1 1 0 0 0-.88.23 10.75 10.75 0 0 1-1.45 1.07 1 1 0 0 0-.47.76l-.21 2.24a12.85 12.85 0 0 1-1.64.56l-1.44-1.68a1 1 0 0 0-.84-.34 11.05 11.05 0 0 1-1.8 0 1 1 0 0 0-.84.34l-1.45 1.68a12.81 12.81 0 0 1-1.64-.56L40 25.09a1 1 0 0 0-.47-.76A10.71 10.71 0 0 1 38 23.26a1 1 0 0 0-.88-.23l-2.12.49a13.36 13.36 0 0 1-1-1.46l1.12-1.93a1 1 0 0 0 .06-.88 10.83 10.83 0 0 1-.55-1.76 1 1 0 0 0-.57-.69l-2-.89v-1.82l2-.89a1 1 0 0 0 .57-.69 10.89 10.89 0 0 1 .55-1.76 1 1 0 0 0-.06-.88L34 7.94a13.51 13.51 0 0 1 1-1.46l2.17.52a1 1 0 0 0 .83-.26 10.74 10.74 0 0 1 1.5-1.07 1 1 0 0 0 .5-.76l.21-2.24a12.65 12.65 0 0 1 1.64-.56l1.44 1.68a1 1 0 0 0 .84.34 11 11 0 0 1 1.8 0 1 1 0 0 0 .84-.34l1.43-1.68a12.69 12.69 0 0 1 1.64.56L50 4.91a1 1 0 0 0 .47.76A10.57 10.57 0 0 1 52 6.74a1 1 0 0 0 .89.23L55 6.48a13.23 13.23 0 0 1 1 1.46l-1.11 1.93a1 1 0 0 0-.06.88 10.77 10.77 0 0 1 .55 1.76 1 1 0 0 0 .57.69l2 .89v1.82z"/><path d="M45 6a9 9 0 1 0 9 9 9 9 0 0 0-9-9m0 16a7 7 0 1 1 7-7 7 7 0 0 1-7 7M.68 15.27l1.74.73c.08.29.16.57.26.84l-1 1.67a1 1 0 0 0 0 1 13.25 13.25 0 0 0 1.7 2.38 1 1 0 0 0 1 .31l1.84-.42c.21.17.44.34.67.49l.18 1.94a1 1 0 0 0 .58.82 12.81 12.81 0 0 0 2.74.92 1 1 0 0 0 1-.33l1.26-1.45a8.09 8.09 0 0 0 .82 0l1.26 1.45a1 1 0 0 0 1 .33 12.8 12.8 0 0 0 2.74-.92 1 1 0 0 0 .58-.82l.18-1.94q.35-.24.67-.49l1.84.42a1 1 0 0 0 1-.31 13.2 13.2 0 0 0 1.7-2.38 1 1 0 0 0 0-1l-1-1.67c.09-.27.18-.55.26-.84l1.74-.77a1 1 0 0 0 .59-.81 13 13 0 0 0 0-2.93 1 1 0 0 0-.59-.81L23.58 10c-.08-.29-.17-.57-.26-.84l1-1.67a1 1 0 0 0 0-1 13.23 13.23 0 0 0-1.7-2.38 1 1 0 0 0-1-.31l-1.82.4c-.21-.17-.44-.34-.67-.49L19 1.76a1 1 0 0 0-.57-.82 12.79 12.79 0 0 0-2.8-.94 1 1 0 0 0-1 .33L13.42 1.8a8.09 8.09 0 0 0-.82 0L11.34.35a1 1 0 0 0-1-.33 12.8 12.8 0 0 0-2.7.92 1 1 0 0 0-.58.82L6.88 3.7c-.23.16-.46.32-.67.49l-1.83-.41a1 1 0 0 0-1 .31A13.22 13.22 0 0 0 1.7 6.46a1 1 0 0 0 0 1l1 1.67c-.1.27-.18.55-.26.84l-1.74.77a1 1 0 0 0-.59.81 13 13 0 0 0 0 2.93 1 1 0 0 0 .59.81m1.35-3l1.65-.73a1 1 0 0 0 .57-.69 9.29 9.29 0 0 1 .46-1.48 1 1 0 0 0-.06-.88L3.74 7a11.37 11.37 0 0 1 .78-1.09l1.73.4A1 1 0 0 0 7.13 6a9.2 9.2 0 0 1 1.23-.91 1 1 0 0 0 .47-.76L9 2.53a11.28 11.28 0 0 1 1.22-.41l1.18 1.37a1 1 0 0 0 .84.34 9.36 9.36 0 0 1 1.52 0 1 1 0 0 0 .84-.34l1.18-1.37a11.44 11.44 0 0 1 1.22.41l.17 1.84a1 1 0 0 0 .47.76 9.07 9.07 0 0 1 1.22.9 1 1 0 0 0 .89.23l1.73-.4a10.91 10.91 0 0 1 .78 1.09l-.91 1.58a1 1 0 0 0-.06.88 9.29 9.29 0 0 1 .46 1.48 1 1 0 0 0 .57.69l1.65.73v1.36l-1.65.73a1 1 0 0 0-.57.69 9.23 9.23 0 0 1-.46 1.48 1 1 0 0 0 .06.88l.92 1.55a11.24 11.24 0 0 1-.78 1.09l-1.73-.4a1 1 0 0 0-.89.23 9 9 0 0 1-1.23.9 1 1 0 0 0-.47.76L17 23.46a11.28 11.28 0 0 1-1.22.42l-1.18-1.37a1 1 0 0 0-.84-.34 9.59 9.59 0 0 1-1.52 0 1 1 0 0 0-.84.34l-1.18 1.37A11.44 11.44 0 0 1 9 23.47l-.17-1.84a1 1 0 0 0-.47-.76A9 9 0 0 1 7.13 20a1 1 0 0 0-.89-.23l-1.73.4a10.91 10.91 0 0 1-.78-1.09l.91-1.58a1 1 0 0 0 .06-.88 9.33 9.33 0 0 1-.46-1.49 1 1 0 0 0-.57-.69L2 13.68v-1.36"/><path d="M13 21a8 8 0 1 0-8-8 8 8 0 0 0 8 8m0-14a6 6 0 1 1-6 6 6 6 0 0 1 6-6m31.28 9.6l-2.61-2.35-1.34 1.49 3.33 3a1 1 0 0 0 1.4-.06l5.67-6-1.45-1.37z"/><path d="M12 16a1 1 0 0 0 .71-.29l4-4-1.41-1.42-3.3 3.3-1.29-1.29-1.41 1.41 2 2a1 1 0 0 0 .7.29m47.34 33.16a1 1 0 0 0 .59-.81 11.9 11.9 0 0 0 0-2.71 1 1 0 0 0-.59-.81l-1.56-.69c-.07-.24-.14-.47-.22-.7l.87-1.5a1 1 0 0 0 0-1 12.34 12.34 0 0 0-1.57-2.19 1 1 0 0 0-1-.31l-1.64.38-.56-.41-.16-1.74a1 1 0 0 0-.58-.82 11.69 11.69 0 0 0-2.49-.85 1 1 0 0 0-1 .33l-1.12 1.3h-.68l-1.12-1.3a1 1 0 0 0-1-.33 11.73 11.73 0 0 0-2.53.85 1 1 0 0 0-.58.82l-.16 1.74-.56.41-1.64-.38a1 1 0 0 0-1 .31A12.33 12.33 0 0 0 37.57 41a1 1 0 0 0 0 1l.87 1.5c-.08.23-.15.46-.22.7l-1.56.69a1 1 0 0 0-.59.81 11.9 11.9 0 0 0 0 2.71 1 1 0 0 0 .59.8l1.56.69c.07.24.14.47.22.7l-.87 1.5a1 1 0 0 0 0 1 12.2 12.2 0 0 0 1.57 2.2 1 1 0 0 0 1 .31l1.64-.38.56.41.16 1.74a1 1 0 0 0 .58.81 11.77 11.77 0 0 0 2.53.85 1 1 0 0 0 1-.33l1.12-1.3h.68l1.12 1.3a1 1 0 0 0 1 .33 11.76 11.76 0 0 0 2.47-.91 1 1 0 0 0 .58-.81l.16-1.74.56-.41 1.64.38a1 1 0 0 0 1-.31A12.25 12.25 0 0 0 58.43 53a1 1 0 0 0 0-1l-.87-1.5c.08-.22.15-.46.22-.7zm-2.82-.94a1 1 0 0 0-.57.69 8.3 8.3 0 0 1-.42 1.35 1 1 0 0 0 .06.88l.81 1.4a10.27 10.27 0 0 1-.65.91l-1.53-.35a1 1 0 0 0-.88.22 8.14 8.14 0 0 1-1.11.82 1 1 0 0 0-.47.76l-.15 1.63a9.76 9.76 0 0 1-1 .35l-1-1.22a1 1 0 0 0-.84-.34 8.56 8.56 0 0 1-1.38 0 1 1 0 0 0-.84.34l-1 1.22a9.59 9.59 0 0 1-1-.35l-.15-1.63a1 1 0 0 0-.47-.76 8.37 8.37 0 0 1-1.11-.82 1 1 0 0 0-.89-.22l-1.53.35a10.47 10.47 0 0 1-.65-.91l.81-1.4a1 1 0 0 0 .06-.88 8.4 8.4 0 0 1-.42-1.35 1 1 0 0 0-.57-.69L38 47.57v-1.14l1.47-.65a1 1 0 0 0 .57-.69 8.33 8.33 0 0 1 .42-1.35 1 1 0 0 0-.06-.88l-.81-1.4a10.78 10.78 0 0 1 .65-.91l1.53.35a1 1 0 0 0 .89-.22 8.1 8.1 0 0 1 1.11-.82 1 1 0 0 0 .47-.76l.15-1.63a10.07 10.07 0 0 1 1-.34l1.05 1.22a1 1 0 0 0 .84.34 8.55 8.55 0 0 1 1.38 0 1 1 0 0 0 .84-.34l1-1.22a10 10 0 0 1 1 .34l.15 1.63a1 1 0 0 0 .47.76 8.13 8.13 0 0 1 1.11.82 1 1 0 0 0 .88.22l1.53-.35a10.57 10.57 0 0 1 .65.91l-.81 1.4a1 1 0 0 0-.06.88 8.43 8.43 0 0 1 .42 1.35 1 1 0 0 0 .57.69l1.47.65v1.14z"/><path d="M48 40a7 7 0 1 0 7 7 7 7 0 0 0-7-7m0 12a5 5 0 1 1 5-5 5 5 0 0 1-5 5"/><path d="M49.42 44.17L48 45.59l-1.41-1.42-1.42 1.42L46.59 47l-1.42 1.41 1.42 1.42L48 48.41l1.42 1.42 1.41-1.42L49.42 47l1.41-1.41-1.41-1.42z"/></g></g></symbol><symbol viewBox="0 0 60 60" id="advantage-5" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ea"><path d="M0 0h60v60H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ea)" data-name="Layer 1"><path d="M9 60h22v-2H9a7 7 0 0 1 0-14h6v-2H9a9 9 0 0 0-7 3.36V15a7 7 0 0 1 7-7h4V6H9a9 9 0 0 0-9 9v36a9 9 0 0 0 9 9"/><path d="M7 51a5 5 0 1 0 5-5 5 5 0 0 0-5 5m8 0a3 3 0 1 1-3-3 3 3 0 0 1 3 3m9 5a5 5 0 1 0-5-5 5 5 0 0 0 5 5m0-8a3 3 0 1 1-3 3 3 3 0 0 1 3-3m12-2a5 5 0 1 0 5 5 5 5 0 0 0-5-5m0 8a3 3 0 1 1 3-3 3 3 0 0 1-3 3m17-3a5 5 0 1 0-5 5 5 5 0 0 0 5-5m-8 0a3 3 0 1 1 3 3 3 3 0 0 1-3-3m-28-9h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm4 0h2v2h-2zm12 16h2v2h-2zm-4 0h2v2h-2zm-4 0h2v2h-2z"/><path d="M51 6H19v2h32a7 7 0 0 1 7 7v30.36A9 9 0 0 0 51 42H33v2h18a7 7 0 0 1 0 14h-6v2h6a9 9 0 0 0 9-9V15a9 9 0 0 0-9-9"/><path d="M40 38a1 1 0 0 0 1-1V22a1 1 0 0 0-1-1H30a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1zm-1-2h-8v-8h8zm-8-13h8v3h-8zm23 15a1 1 0 0 0 1-1V22a1 1 0 0 0-1-1H44a1 1 0 0 0-1 1v15a1 1 0 0 0 1 1zm-1-2h-8v-8h8zm-8-13h8v3h-8zM15 0v13h-4a1 1 0 0 0-.71.29l-4 4A1 1 0 0 0 6 18v8a1 1 0 0 0 .4.8l3.6 2.7V34a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-4.5l3.6-2.7a1 1 0 0 0 .4-.8v-8a1 1 0 0 0-.29-.71l-4-4A1 1 0 0 0 21 13h-4V0zm5 23h-8v-3h8zm0 10h-8v-8h8v8zm4-14.59v7.09L22 27v-8a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v8l-2-1.5v-7.09L11.41 15h9.17z"/></g></g></symbol><symbol viewBox="0 0 90.01 90.01" id="advantage-6" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="fa"><path d="M0 0h90.01v90.01H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#fa)" data-name="Layer 1"><path d="M29.74 56.91a2 2 0 0 0 1.41-.59l2.92-2.92a2.001 2.001 0 0 0-2.83-2.83l-2.92 2.92a2 2 0 0 0 1.41 3.41M26.64 58a2 2 0 0 0-2.83 0L7.54 74.28a2.001 2.001 0 1 0 2.83 2.83l16.27-16.27a2 2 0 0 0 0-2.83m9.97-2.08L22.47 70.07a2.001 2.001 0 1 0 2.83 2.83l14.14-14.14a2.001 2.001 0 1 0-2.83-2.83M17.32 75.22l-4.42 4.42a2.001 2.001 0 0 0 2.83 2.83L20.15 78a2.001 2.001 0 0 0-2.83-2.83"/><path d="M15.07 18.54a2.87 2.87 0 0 1-4 0l-6.85-6.82-.22-.18-.15-.11-.17-.09-.2-.09H2.17l-.17.08-.15.08-.18.11-.15.12-.1.08v.05l-.13.16-.11.16-.18.17c0 .07-.06.13-.09.2v.06a18 18 0 0 0 22.71 22.82L31 42.71a5.73 5.73 0 0 0-3.44 1.63L3.27 68.64a8.57 8.57 0 0 0 0 12.1l6 6a8.57 8.57 0 0 0 12.1 0l24.3-24.29A5.73 5.73 0 0 0 47.3 59l7.37 7.37A18.07 18.07 0 0 0 77.5 89.11h.06l.19-.09.17-.09.15-.11.17-.14.07-.08.14-.17.1-.16a1.69 1.69 0 0 0 .09-.17 1.63 1.63 0 0 0 .07-.18 1.8 1.8 0 0 0 .06-.19 1.63 1.63 0 0 0 0-.18v-.2a1.51 1.51 0 0 0 0-.19v-.4a.9.9 0 0 0 0-.11v-.06c0-.07-.06-.13-.09-.19l-.09-.17-.12-.23-.14-.17L71.48 79a2.87 2.87 0 0 1 0-4l3.42-3.42a2.87 2.87 0 0 1 4 0l6.81 6.81.17.14.15.11.16.09.2.09h.12a2 2 0 0 0 .56.09 2 2 0 0 0 .54-.08h.11a1.93 1.93 0 0 0 .48-.24l.08-.06a2.07 2.07 0 0 0 .2-.17 1.92 1.92 0 0 0 .14-.17l.08-.09a2.06 2.06 0 0 0 .26-.5 18.08 18.08 0 0 0-22.63-22.89l-12-12 21.81-21.82 4.5.31h.14a2 2 0 0 0 1.75-1l7.22-13a2 2 0 0 0-.33-2.38l-.48-.49-3.21-3.26-.49-.48a2 2 0 0 0-2.38-.34l-13 7.22a2 2 0 0 0-1 1.89l.32 4.5-21.87 21.83-12-12A18.08 18.08 0 0 0 12.47 1h-.06l-.2.09-.21.06-.15.11-.17.14-.07.09-.14.17-.1.16-.09.18-.07.18q0 .09-.05.18a1.68 1.68 0 0 0 0 .19 1.39 1.39 0 0 0 0 .19 1.79 1.79 0 0 0 0 .19v.57a2 2 0 0 0 .09.19 1.72 1.72 0 0 0 .09.17l.1.14.14.18 6.81 6.81a2.87 2.87 0 0 1 0 4zm27.77 41.08l-24.29 24.3a4.56 4.56 0 0 1-6.44 0l-6-6a4.56 4.56 0 0 1 0-6.44l24.28-24.31a1.79 1.79 0 0 1 2.53 0l1.61 1.61A2 2 0 0 0 37.36 46l-.29-.29 1.31-1.31a1.42 1.42 0 0 1 2 0l.54.54 4.19 4.19.54.54a1.42 1.42 0 0 1 0 2l-1.3 1.3L42 50.64a2.001 2.001 0 0 0-2.83 2.83l3.62 3.62a1.8 1.8 0 0 1 0 2.53m21.57-1.18a1.82 1.82 0 0 0 .19.15l.11.08a2 2 0 0 0 1.12.35 2 2 0 0 0 .8-.17 14.08 14.08 0 0 1 19.3 14l-4.12-4.15a6.87 6.87 0 0 0-9.7 0l-3.42 3.41a6.87 6.87 0 0 0 0 9.7L72.81 86a14.08 14.08 0 0 1-14-19.25 2 2 0 0 0 .53-.37L61 64.64a2.001 2.001 0 1 0-2.84-2.82L57 63l-8.56-8.5a5.41 5.41 0 0 0 .76-6.67l2.25-2.25zm19.07-54l2.05 2.05-5.83 10.63-4.15-.29h-.59l-.27.08h-.08l-.27.14h-.06a2 2 0 0 0-.26.21L46.52 44.85l-1.36-1.36L72.6 16.05a2.06 2.06 0 0 0 .19-.23l.06-.09a2.38 2.38 0 0 0 .12-.24l.05-.12a2.15 2.15 0 0 0 .07-.23v-.15a2 2 0 0 0 0-.21v-.27l-.29-4.15zM21.31 8.25l-4.16-4.16a14.07 14.07 0 0 1 14.08 19.08 2 2 0 0 0-.27.22l-1.7 1.71a2.001 2.001 0 1 0 2.84 2.82L33 27l11.48 11.52-2.25 2.25a5.42 5.42 0 0 0-6.68.77l-9.95-9.89a2 2 0 0 0-2.2-.47A14.08 14.08 0 0 1 4 17.2l4.2 4.16a6.87 6.87 0 0 0 9.7 0l3.41-3.42a6.87 6.87 0 0 0 0-9.7"/></g></g></symbol><symbol viewBox="0 0 14.25 9.25" id="angle-down" xmlns="http://www.w3.org/2000/svg"><defs><style>.gcls-1{fill-rule:evenodd;filter:url(#gfilter)}</style><filter id="gfilter" x=".75" y=".75" width="14.25" height="9.25" filterUnits="userSpaceOnUse"><feFlood result="flood" flood-color="#28245d"/><feComposite result="composite" operator="in" in2="SourceGraphic"/><feBlend result="blend" in2="SourceGraphic"/></filter></defs><path id="gПрямоугольник_7" data-name="Прямоугольник 7" class="gcls-1" d="M.757 2.172L2.172.757l7.071 7.071-1.415 1.415zm14.236.333l-1.331-1.5-6.655 7.49 1.331 1.5z" transform="translate(-.75 -.75)"/></symbol><symbol viewBox="0 0 12 21" id="fcb" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M7.8 21v-9.6h3.52l.53-3.72H7.8V5.3c0-1.08.32-1.82 2-1.82H12V.14C11.62.09 10.33 0 8.83 0 5.7 0 3.56 1.73 3.56 4.93v2.76H0v3.72h3.56V21z" data-name="Layer 1"/></g></symbol><symbol viewBox="0 0 28 28" id="magnifier" xmlns="http://www.w3.org/2000/svg"><defs><clipPath id="ia"><path d="M0 0h28v28H0z"/></clipPath></defs><g data-name="Layer 2"><g clip-path="url(#ia)" data-name="Layer 1"><path d="M26.3 28a1.66 1.66 0 0 1-1.2-.5l-6.9-6.9a11.88 11.88 0 1 1 2.4-2.5l6.9 6.9a1.69 1.69 0 0 1 0 2.4 2 2 0 0 1-1.2.6M11.4 3.5a7.9 7.9 0 1 0 7.9 7.9 7.85 7.85 0 0 0-7.9-7.9"/></g></g></symbol><symbol viewBox="0 0 1000 1000" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M772.3 989.9c21.8 0 217.7-144.8 217.7-163.3S770.8 670 751.8 670s-82.6 76.3-99.8 84.8c-17.2 8.5-124.4 5.4-243.9-114-119.4-119.4-160.2-256.9-160.2-278.5 0-21.6 99.6-88.3 102.4-104C353 242.7 218.9 10 197.2 10 175.4 10 10 211 10 227.7s15.1 232.2 287.9 505c272.9 272.7 452.5 257.1 474.4 257.2z"/></symbol><symbol viewBox="0 0 14.24 9.23" id="plain-select-angle" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path fill-rule="evenodd" d="M12.9.25L7.62 6.2 1.41 0 0 1.41 6.28 7.7l-.03.04 1.33 1.49 6.66-7.48L12.9.25z" data-name="Layer 1"/></g></symbol><symbol viewBox="0 0 272.13 159.33" id="vk" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M226.06 78.12s35.86-50.58 39.42-67.2c1.19-5.94-1.43-9.26-7.6-9.26h-31.11c-7.12 0-9.74 3.09-11.87 7.6 0 0-16.82 35.83-37.28 58.42-6.57 7.3-9.91 9.5-13.54 9.5-2.92 0-4.27-2.44-4.27-9V10.45c0-8.07-.95-10.45-7.6-10.45h-49.87c-3.8 0-6.17 2.21-6.17 5.22 0 7.6 11.64 9.32 11.64 29.92v42.5c0 8.55-.48 11.87-4.51 11.87-10.69.01-36.1-36.79-50.3-78.59C50.1 2.38 47 0 38.94 0H7.84C3.32 0 0 3.09 0 7.6c0 8.31 9.74 46.78 48 98.31 25.64 34.67 59.36 53.43 89.76 53.43 18.52 0 23-3.09 23-10.92v-26.6c0-6.65 2.61-9.5 6.41-9.5 4.27 0 11.82 1.37 29.44 18.76 20.9 19.95 22.32 28.26 33.72 28.26h34.91c3.56 0 6.89-1.66 6.89-7.6 0-7.84-10.21-21.85-25.88-38.47-6.41-8.55-16.86-17.81-20.18-22.08-4.76-4.99-3.34-7.84-.01-13.07z" data-name="Layer 1"/></g></symbol><symbol viewBox="0 0 278.33 188.33" id="ytb" xmlns="http://www.w3.org/2000/svg"><g data-name="Layer 2"><path d="M225.33 0H53A53 53 0 0 0 0 53v82.33a53 53 0 0 0 53 53h172.33a53 53 0 0 0 53-53V53a53 53 0 0 0-53-53m-112.5 137.33V51.6l73 42.87z" data-name="Layer 1"/></g></symbol></svg> </div>
 
   <script src="assets/js/app.js"></script>
 

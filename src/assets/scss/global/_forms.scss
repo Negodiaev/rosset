@@ -1,0 +1,47 @@
+.select {
+  position: relative;
+  background-color: $white;
+  &:after {
+    content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOS45OSAxMSI+PHRpdGxlPmFuZ2xlLWRvd248L3RpdGxlPjxnIGlkPSI2NTcyMGZkMC1jYTFkLTRmMDMtYjIzZC1jYjU3YTg5YzVlMWQiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IjE2NjIyM2Q2LTJkNDItNDU0ZC1hZGNiLWU5YmFlMWJkNDIzOCIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBkPSJNMCwuNS40OCwwLDEwLDEwLDE5LjUyLDAsMjAsLjUsMTAsMTFaIiBzdHlsZT0iZmlsbDojMmMyYzJjIi8+PC9nPjwvZz48L3N2Zz4=);
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 20px;
+    transform: translateY(-50%);
+  }
+  select {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0;
+    padding: rem-calc(13 45 13 10);
+    min-width: rem-calc(165);
+    height: auto;
+    border: 1px solid $light-gray;
+    font-size: rem-calc(14);
+    line-height: unitless-calc(22.1, 14);
+    background-color: transparent;
+  }
+  &.plain {
+    background-color: $body-background;
+    &:after {
+      content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNC4yNCA5LjIzIj48dGl0bGU+cGxhaW4tc2VsZWN0LWFuZ2xlPC90aXRsZT48ZyBpZD0iNDQxNDdjYjktNTM1NS00Njg1LWE5YTQtNjFhNzBiZTQ2NDEwIiBkYXRhLW5hbWU9IkxheWVyIDIiPjxnIGlkPSI0ZTI5MzVhNi1lYTlmLTRlMWMtYmYxZi0zNzJiMTdlNjE1ZmIiIGRhdGEtbmFtZT0iTGF5ZXIgMSI+PHBvbHlnb24gcG9pbnRzPSIxMi45IDAuMjUgNy42MiA2LjIgMS40MSAwIDAgMS40MSA2LjI4IDcuNyA2LjI1IDcuNzQgNy41OCA5LjIzIDE0LjI0IDEuNzUgMTIuOSAwLjI1IiBzdHlsZT0iZmlsbDojMjgyNDVkO2ZpbGwtcnVsZTpldmVub2RkIi8+PC9nPjwvZz48L3N2Zz4=);
+      width: 15px;
+    }
+    select {
+      padding-top: rem-calc(10);
+      padding-bottom: rem-calc(10);
+      min-width: auto;
+      border-color: transparent;
+      font-size: rem-calc(13);
+      line-height: unitless-calc(22.0001, 13);
+      text-transform: uppercase;
+      font-weight: $global-weight-bold;
+      letter-spacing: 0.1em;
+      color: $anchor-color;
+      &:focus {
+        box-shadow: none;
+        border-color: $light-gray;
+      }
+    }
+  }
+}

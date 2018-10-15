@@ -1,16 +1,230 @@
 @include breakpoint(medium) {
   // Home page
   .header-content {
-    border-bottom: 1px solid #000;
+    padding-top: rem-calc(13);
+    padding-bottom: rem-calc(13);
+    border-bottom: 1px solid #cdccdb;
+  }
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-phone-link {
+    font-size: rem-calc(24);
+    line-height: unitless-calc(32, 30);
+    font-weight: 600;
+  }
+  .section {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+  }
+  .section-title {
+    margin-bottom: rem-calc(20);
+  }
+  .title {
+    &.bordered {
+      margin-bottom: rem-calc(82);
+      &:after {
+        bottom: rem-calc(-45);
+      }
+    }
+  }
+  .blocks-cell,
+  .content-block {
+    margin-bottom: rem-calc(20);
+  }
+  .card-section {
+    padding: rem-calc(30);
+  }
+  .card-picture {
+    min-height: rem-calc(217);
+  }
+  .hero-slider {
+    .swiper-pagination {
+      padding-left: rem-calc(48);
+      padding-right: rem-calc(48);
+    }
+    &.swiper-container-horizontal {
+      & > .swiper-pagination-bullets {
+        bottom: rem-calc(37);
+      }
+    }
+  }
+  .hero-slide-content {
+    padding: rem-calc(58 53 70);
+    max-width: rem-calc(461);
+    p {
+      padding-right: rem-calc(120);
+    }
+  }
+  .hero-slide-info {
+    margin-bottom: rem-calc(42);
+  }
+  .advantages-card-picture {
+    padding-top: rem-calc(47);
+  }
+  .advantages-card-info {
+    padding-bottom: rem-calc(52);
+  }
+  .advantages-card-title {
+    margin-bottom: rem-calc(26);
+  }
+  .news-card-info {
+    padding-bottom: rem-calc(24);
+  }
+  .section-part {
+    display: flex;
+    flex-direction: column;
+  }
+  .shareholders {
+    padding-top: 0;
+  }
+  .custom-card-info {
+    padding: rem-calc(26 26 36);
+  }
+  .articles-card-info {
+    padding-bottom: rem-calc(48);
+  }
+  .content-card {
+    padding: rem-calc(30);
+    p {
+      margin-bottom: rem-calc(26);
+    }
+  }
+  .links {
+    &.simple {
+      li {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        min-height: rem-calc(33);
+      }
+    }
+  }
+  .copyright {
+    margin-bottom: 0;
   }
 }
 
 @include breakpoint(large) {
   // Home page
+  .main {
+    padding-bottom: rem-calc(38);
+  }
+  .header-phone-link {
+    font-size: rem-calc(30);
+  }
+  .navigation-menu {
+    li {
+      letter-spacing: 0.1em;
+    }
+  }
+  .section {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(36);
+  }
+  .section-title {
+    margin-bottom: rem-calc(34);
+  }
+  .hero {
+    padding-bottom: rem-calc(10);
+  }
+  .goods-blocks {
+    padding-bottom: rem-calc(17);
+  }
+  .advantages {
+    padding-bottom: rem-calc(15);
+  }
+  .delivery-map,
+  .news {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(4);
+  }
+  .delivery-map-picture {
+    position: relative;
+    overflow: hidden;
+    & > img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0;
+      min-height: 100%;
+      max-width: none;
+      transform: translate(0, -50%);
+    }
+  }
+  .news-card {
+    margin-bottom: rem-calc(20);
+  }
+  .section-part-title {
+    margin-bottom: rem-calc(20);
+  }
+  .custom-card {
+    margin-bottom: 0;
+  }
+  .content-card {
+    padding: rem-calc(71 85 45);
+    background-color: $white;
+  }
+  .about-content-card {
+    margin-bottom: 0;
+  }
+  .footer {
+    background-image: linear-gradient(90deg, #1e1a51 25%, #1a1744 0);
+    background-repeat: no-repeat;
+  }
+  .footer-col {
+    padding-top: rem-calc(52);
+    padding-bottom: rem-calc(52);
+  }
+  .footer-logo {
+    margin-bottom: rem-calc(40);
+  }
+  .footer-phone-link {
+    margin-bottom: rem-calc(16);
+  }
+  .footer-callback,
+  .footer-infoblock {
+    margin-bottom: rem-calc(44);
+  }
+  .footer-infoblock {
+    p {
+      margin-bottom: rem-calc(12);
+    }
+  }
+  .footer-content {
+    padding-top: rem-calc(12);
+  }
+  .links-col {
+    & + .links-col {
+      border-left: 1px solid #302c68;
+    }
+  }
+  .links-col-title,
+  .links {
+    padding-left: rem-calc(10);
+  }
+  .links-col-title {
+    margin-bottom: rem-calc(28);
+  }
+  .links {
+    &.simple {
+      li {
+        min-height: rem-calc(59);
+      }
+    }
+  }
+  .copyright {
+    padding-right: rem-calc(35);
+  }
 }
 
 @include breakpoint(xlarge) {
   // Home page
+  .footer-content {
+    padding-left: rem-calc(28);
+  }
 }
 
 @include breakpoint(1280px) {
@@ -19,8 +233,61 @@
 
 @include breakpoint(medium down) {
   // Home page
+  .section {
+    & + .section {
+      padding-top: 0;
+    }
+  }
+}
+
+@include breakpoint(medium only) {
+  // Home page
+  .news-cards,
+  .news-card-info,
+  .purchase-list,
+  .purchase-item {
+    display: flex;
+  }
+  .news-card-info {
+    flex-direction: column;
+    padding: rem-calc(20 15);
+  }
+  .news-card-date,
+  .purchase-item-date {
+    margin-top: auto;
+  }
+  .purchase {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .purchase-item {
+    flex-direction: column;
+    height: 100%;
+  }
+  .purchase-list {
+    border-bottom: 1px solid $medium-gray;
+    li {
+      & + li {
+        border-top: 0;
+        border-left: 1px solid $medium-gray;
+      }
+    }
+  }
 }
 
 @include breakpoint(small only) {
   // Home page
+  .lead {
+    font-size: rem-calc(18);
+    line-height: 1.5;
+  }
+  .header-logo {
+    svg {
+      width: auto;
+      height: rem-calc(42.01);
+    }
+  }
+  .burger-wrapper {
+    line-height: 0;
+  }
 }

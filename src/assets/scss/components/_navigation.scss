@@ -1,0 +1,30 @@
+.navigation {
+  padding-top: rem-calc(7);
+  padding-bottom: rem-calc(7);
+}
+.navigation-menu {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  li {
+    font-size: rem-calc(13);
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+  }
+  a {
+    line-height: unitless-calc(32, 13);
+  }
+}
+.search-toggle {
+  padding: rem-calc(13);
+  line-height: 1;
+  color: $anchor-color;
+  background-color: $body-background;
+  &:hover,
+  &:focus {
+    color: $white;
+    background-color: $anchor-color;
+  }
+}
+.header-search-toggle {
+  margin-right: rem-calc(15);
+}

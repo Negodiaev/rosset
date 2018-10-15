@@ -1,0 +1,23 @@
+.goods-card {
+  &:hover,
+  &:focus {
+    .goods-card-content {
+      color: $white;
+      background-color: $primary-color;
+    }
+  }
+}
+.goods-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: rem-calc(103);
+  font-size: rem-calc(13);
+  line-height: unitless-calc(19, 13);
+  font-weight: $global-weight-bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background-color: $white;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+}

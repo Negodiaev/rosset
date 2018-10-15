@@ -1,4 +1,127 @@
+.footer {
+  color: #8c89b9;
+  background-color: #1a1744;
+}
+.footer-col {
+  padding-top: rem-calc(30);
+  padding-bottom: rem-calc(30);
+}
+.footer-contact-col {
+  background-color: #1e1a51;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: rem-calc(30);
+}
+.footer-callback,
+.footer-infoblock {
+  margin-bottom: rem-calc(30);
+  a {
+    display: inline-block;
+  }
+}
+.footer-phone-link {
+  margin-bottom: rem-calc(8);
+  font-size: rem-calc(31);
+  font-weight: $global-weight-bold;
+  color: $white;
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+.footer-callback-link {
+  line-height: 1;
+  color: #ffd37f;
+  &:hover,
+  &:focus {
+    color: $white;
+  }
+}
+.footer-infoblock {
+  p {
+    margin-bottom: rem-calc(6);
+    line-height: unitless-calc(22, 15);
+  }
+}
+.contact-infoblock {
+  color: $white;
+}
+.mail-infoblock {
+  a {
+    margin-bottom: rem-calc(8);
+    color: $white;
+    &:hover,
+    &:focus {
+      color: #ffd37f;
+    }
+  }
+}
+.scl-menu {
+  margin-bottom: rem-calc(16);
+  a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem-calc(53);
+    height: rem-calc(53);
+    border-radius: 50%;
+    color: $white;
+    background-color: #3d3781;
+    &:hover,
+    &:focus {
+      background-color: $anchor-color;
+    }
+  }
+  &.simple {
+    li {
+      & + li {
+        margin-left: rem-calc(20);
+      }
+    }
+  }
+}
 .footer-content {
   align-content: space-between;
   height: 100%;
+}
+.links-col {
+  margin-bottom: rem-calc(30);
+}
+.links-col-title {
+  margin-bottom: rem-calc(10);
+  line-height: unitless-calc(30.05, 17);
+}
+.links {
+  &.simple {
+    align-items: flex-start;
+    li {
+      padding: rem-calc(6 0);
+      & + li {
+        margin-left: 0;
+      }
+    }
+    a {
+      line-height: unitless-calc(21, 15);
+      color: $white;
+      &:hover,
+      &:focus {
+        color: #ffd37f;
+      }
+    }
+  }
+}
+.copyright {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(25.05, 14);
+  a {
+    display: inline-block;
+    border-bottom: 1px solid #8c89b9;
+    color: #8c89b9;
+    &:hover,
+    &:focus {
+      border-bottom-color: transparent;
+    }
+  }
 }

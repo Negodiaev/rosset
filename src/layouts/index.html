@@ -8,22 +8,36 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{meta-title}} | Rosset</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
   <link rel="stylesheet" href="{{root}}assets/css/app.css">
 </head>
 
 <body>
 
   <div class="off-canvas-wrapper">
-    <div id="offCanvas" class="side off-canvas position-left text-center" data-off-canvas>
-      <ul class="main-menu vertical menu">
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
-        <li><a href="#">Menu item</a></li>
+    <div id="offCanvas" class="side off-canvas position-right text-center" data-off-canvas>
+      <div class="side-options-panel options-panel flex-container align-center">
+        <button class="side-search-toggle search-toggle" type="button">
+          <svg class="icon" width="17" height="17">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+        <div class="select plain">
+          <select>
+            <option value="ru">Ru</option>
+            <option value="en">En</option>
+          </select>
+        </div>
+      </div>
+      <!-- /.options-panel -->
+      <ul class="side-menu vertical menu">
+        <li><a href="#">О компании</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">Публикации</a></li>
+        <li><a href="#">Контакты</a></li>
       </ul>
-      <!-- /.main-menu -->
+      <!-- /.side-menu -->
     </div>
     <!-- /.off-canvas -->
     <div class="off-canvas-content" data-off-canvas-content>

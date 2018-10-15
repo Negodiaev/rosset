@@ -1,0 +1,37 @@
+.header {
+  background-color: $white;
+  box-shadow: 0 0 18px rgba($black, 0.11);
+}
+.header-content {
+  padding-top: rem-calc(6);
+  padding-bottom: rem-calc(6);
+}
+.logo-text {
+  padding-left: rem-calc(12);
+  font-size: rem-calc(23);
+  line-height: unitless-calc(32, 23);
+  font-weight: 600;
+  color: $black;
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+}
+.phone-link {
+  display: inline-block;
+  &:hover,
+  &:focus {
+    color: $anchor-color;
+  }
+}
+.callback-link {
+  display: inline-block;
+  line-height: unitless-calc(32.0001, 15);
+}
+.header-callback-link {
+  color: $primary-color;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}

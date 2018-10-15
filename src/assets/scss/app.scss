@@ -72,13 +72,22 @@
 // global styles
 @import 'global/fonts';
 @import 'global/base';
+@import 'global/forms';
 @import 'global/layout';
 
 // custom components
+@import 'components/buttons';
 @import 'components/navigation';
 
 @import 'components/header';
 @import 'components/footer';
+@import 'components/side';
+
+@import 'components/hero';
+@import 'components/goods-blocks';
+
+// media queries
+@import 'pages/home';
 
 // media queries
 @import 'global/responsive';

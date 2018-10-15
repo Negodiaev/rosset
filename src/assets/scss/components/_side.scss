@@ -1,0 +1,23 @@
+.side-options-panel {
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(5 10 6);
+  background-color: $light-gray;
+}
+.side-search-toggle {
+  margin-right: rem-calc(10);
+  &:hover,
+  &:focus {
+    color: $anchor-color;
+    background-color: $body-background;
+  }
+}
+.side-menu {
+  li {
+    & + li {
+      border-top: 1px solid $medium-gray;
+    }
+  }
+  a {
+    padding: rem-calc(15);
+  }
+}

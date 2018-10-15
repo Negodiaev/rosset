@@ -1,0 +1,75 @@
+.advantages-card-picture {
+  color: $anchor-color;
+}
+.advantages-card-title {
+  margin-bottom: rem-calc(15);
+  line-height: 1;
+  text-align: center;
+}
+.advantages-card-info {
+  padding-bottom: rem-calc(30);
+}
+.delivery-map {
+  padding-top: 0;
+}
+.delivery-map-picture {
+  & > img {
+    min-width: 100%;
+  }
+}
+.news {
+  padding-bottom: 0;
+}
+.news-card-title {
+  margin-bottom: rem-calc(12);
+  line-height: unitless-calc(19, 15);
+}
+.news-card-info {
+  p {
+    margin-bottom: rem-calc(8);
+    line-height: unitless-calc(22, 15);
+  }
+}
+.custom-card-picture {
+  & > img {
+    width: 100%;
+  }
+}
+.custom-card-info {
+  padding-bottom: rem-calc(20);
+}
+.custom-card-title {
+  margin-bottom: rem-calc(13);
+  line-height: unitless-calc(25.03, 17);
+}
+.purchase {
+  justify-content: space-between;
+  padding: rem-calc(0 15 24);
+}
+.purchase-list {
+  li {
+    & + li {
+      border-top: 1px solid $medium-gray;
+    }
+  }
+}
+.purchase-item {
+  padding: rem-calc(28 15 30);
+}
+.purchase-link {
+  display: inline-block;
+  margin-left: rem-calc(15);
+  line-height: unitless-calc(19, 15);
+  font-weight: $global-weight-bold;
+}
+.partners-blocks-cell {
+  margin-bottom: rem-calc(20);
+}
+.partners-item {
+  justify-content: center;
+  align-items: center;
+  height: rem-calc(100);
+  & > img {
+    width: auto;
+  }
+}

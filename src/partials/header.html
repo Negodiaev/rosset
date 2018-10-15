@@ -2,22 +2,22 @@
   <div class="grid-container">
     <div class="header-content grid-container full">
       <div class="grid-x grid-margin-x align-middle">
-        <div class="cell small-2 medium-6 medium-order-2">
+        <div class="cell small-2 medium-4 medium-order-2">
           <div class="header-callback callback medium-text-right">
-            <p class="callback-text">
+            <div class="callback-text">
               <a href="tel:+78003508403" class="header-phone-link phone-link">
-                <svg class="icon hide-for-medium" width="24" height="24">
+                <svg class="icon hide-for-medium" width="22" height="22">
                   <use xlink:href="#phone"></use>
                 </svg>
                 <span class="phone-link-text show-for-medium">8&nbsp;800&nbsp;350&nbsp;84&nbsp;03</span>
               </a>
-            </p>
-            <a href="#" class="callback-link show-for-medium">Заказать звонок</a>
+            </div>
+            <a href="#" class="header-callback-link callback-link show-for-medium">Заказать звонок</a>
           </div>
         </div>
         <!-- /.cell -->
-        <div class="cell small-8 medium-6 medium-order-1 text-center medium-text-left">
-          <a href="#" class="header-logo logo flex-container align-middle">
+        <div class="cell small-8 medium-8 medium-order-1 text-center medium-text-left">
+          <a href="#" class="header-logo logo">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 121.15 104.33"
               width="87" height="75">
               <defs>
@@ -56,7 +56,7 @@
           </a>
         </div>
         <!-- /.cell -->
-        <div class="cell small-2 hide-for-medium">
+        <div class="burger-wrapper cell small-2 hide-for-medium text-right">
           <button type="button" class="burger" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas">
             <i></i>
             <i></i>
@@ -72,9 +72,9 @@
   <!-- /.grid-container -->
   <div class="navigation show-for-medium">
     <div class="grid-container">
-      <div class="grid-x">
-        <div class="cell medium-9">
-          <ul class="navigation-menu menu">
+      <div class="grid-x grid-padding-x align-middle">
+        <div class="cell medium-9 large-8">
+          <ul class="navigation-menu menu simple">
             <li><a href="#">О компании</a></li>
             <li><a href="#">Каталог</a></li>
             <li><a href="#">Услуги</a></li>
@@ -83,18 +83,21 @@
           </ul>
         </div>
         <!-- /.cell -->
-        <div class="cell medium-3">
-          <div class="options-panel flex-container text-right">
-            <button class="button" type="button">
+        <div class="cell medium-3 large-4">
+          <div class="options-panel flex-container align-right">
+            <button class="header-search-toggle search-toggle" type="button">
               <svg class="icon" width="17" height="17">
                 <use xlink:href="#magnifier"></use>
               </svg>
             </button>
-            <select>
-              <option value="ru">Ru</option>
-              <option value="en">En</option>
-            </select>
+            <div class="select plain">
+              <select>
+                <option value="ru">Ru</option>
+                <option value="en">En</option>
+              </select>
+            </div>
           </div>
+          <!-- /.options-panel -->
         </div>
         <!-- /.cell -->
       </div>
