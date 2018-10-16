@@ -1,0 +1,16 @@
+.breadcrumbs {
+  padding: rem-calc(26 0);
+  li {
+    line-height: unitless-calc(19, 14);
+  }
+  a {
+    display: inline-block;
+    border-bottom: 1px solid $primary-color;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      text-decoration: none;
+      color: $anchor-color;
+    }
+  }
+}

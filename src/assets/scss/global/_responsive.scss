@@ -18,7 +18,8 @@
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
   }
-  .section-title {
+  .section-title,
+  .page-title {
     margin-bottom: rem-calc(20);
   }
   .title {
@@ -104,6 +105,17 @@
   }
   .copyright {
     margin-bottom: 0;
+  }
+
+  // Catalog page
+  .selection-card {
+    min-height: rem-calc(129);
+  }
+  .special-card-info {
+    padding: rem-calc(32);
+  }
+  .special-card-title {
+    margin-bottom: rem-calc(20);
   }
 }
 
@@ -218,6 +230,14 @@
   .copyright {
     padding-right: rem-calc(35);
   }
+
+  // Catalog page
+  .catalog-kinds {
+    padding-top: rem-calc(30);
+  }
+  .special-section {
+    padding-bottom: 0;
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -289,5 +309,29 @@
   }
   .burger-wrapper {
     line-height: 0;
+  }
+
+  // Inner page
+  .breadcrumbs {
+    margin-bottom: rem-calc(10);
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(12);
+    li {
+      display: none;
+      max-width: rem-calc(140);
+      font-size: rem-calc(13);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:first-child,
+      &:last-child {
+        display: list-item;
+      }
+    }
+  }
+
+  // Catalog page
+  .selection-card {
+    padding-left: 0;
   }
 }

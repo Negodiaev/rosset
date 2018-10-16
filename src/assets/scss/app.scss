@@ -82,12 +82,15 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/side';
+@import 'components/breadcrumbs';
 
 @import 'components/hero';
 @import 'components/goods-blocks';
 
 // media queries
 @import 'pages/home';
+@import 'pages/page';
+@import 'pages/catalog';
 
 // media queries
 @import 'global/responsive';

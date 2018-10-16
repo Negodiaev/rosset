@@ -1,0 +1,26 @@
+.selection-card {
+  flex-direction: row;
+  align-items: center;
+  padding: rem-calc(15);
+  &:hover,
+  &:focus {
+    color: $anchor-color;
+  }
+}
+.selection-card-picture {
+  flex: 0 0 rem-calc(95);
+  padding: rem-calc(0 10);
+  text-align: center;
+  color: $anchor-color;
+}
+.selection-card-title,
+.special-card-title {
+  font-weight: 600;
+}
+.selection-card-title {
+  font-size: rem-calc(16);
+  line-height: unitless-calc(25, 16);
+}
+.special-card-title {
+  line-height: unitless-calc(25.05, 20);
+}

@@ -98,3 +98,7 @@ svg {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.page-title {
+  max-width: rem-calc(850);
+  color: $anchor-color;
+}
