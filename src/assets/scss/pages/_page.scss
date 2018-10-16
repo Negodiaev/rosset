@@ -1,0 +1,29 @@
+.page-title {
+  max-width: rem-calc(850);
+  color: $anchor-color;
+}
+.custom-object-title {
+  line-height: 1;
+}
+.pagination {
+  li {
+    width: rem-calc(40);
+    line-height: 1;
+    text-align: center;
+    background-color: $white;
+    &.pagination-previous,
+    &.pagination-next {
+      width: rem-calc(20.0001);
+      background-color: transparent;
+      a {
+        padding: rem-calc(10 0);
+      }
+    }
+  }
+}
+.content-card-title {
+  margin-bottom: $global-margin;
+  font-size: rem-calc(22);
+  line-height: 1;
+  font-weight: 600;
+}

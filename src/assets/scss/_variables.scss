@@ -92,8 +92,8 @@ $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
-$global-menu-nested-margin: 1rem;
+$global-menu-padding: rem-calc(24 15);
+$global-menu-nested-margin: rem-calc(30);
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
@@ -247,10 +247,10 @@ $accordion-content-color: $body-font-color;
 $accordion-content-padding: 1rem;
 // 8. Accordion Menu
 // -----------------
-$accordionmenu-padding: $global-menu-padding;
+$accordionmenu-padding: rem-calc(16 10);
 $accordionmenu-nested-margin: $global-menu-nested-margin;
-$accordionmenu-submenu-padding: $accordionmenu-padding;
-$accordionmenu-arrows: true;
+$accordionmenu-submenu-padding: 0;
+$accordionmenu-arrows: false;
 $accordionmenu-arrow-color: $primary-color;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;
@@ -444,8 +444,8 @@ $label-padding: 0.33333rem 0.5rem;
 $label-radius: $global-radius;
 // 22. Media Object
 // ----------------
-$mediaobject-margin-bottom: $global-margin;
-$mediaobject-section-padding: $global-padding;
+$mediaobject-margin-bottom: rem-calc(10);
+$mediaobject-section-padding: rem-calc(20);
 $mediaobject-image-width-stacked: 100%;
 // 23. Menu
 // --------
@@ -505,20 +505,20 @@ $orbit-control-padding: 1rem;
 $orbit-control-zindex: 10;
 // 27. Pagination
 // --------------
-$pagination-font-size: rem-calc(14);
-$pagination-margin-bottom: $global-margin;
-$pagination-item-color: $black;
-$pagination-item-padding: rem-calc(3 10);
-$pagination-item-spacing: rem-calc(1);
+$pagination-font-size: rem-calc(14.0001);
+$pagination-margin-bottom: 0;
+$pagination-item-color: #656565;
+$pagination-item-padding: rem-calc(13 5);
+$pagination-item-spacing: rem-calc(10);
 $pagination-radius: $global-radius;
 $pagination-item-background-hover: $light-gray;
-$pagination-item-background-current: $primary-color;
+$pagination-item-background-current: $anchor-color;
 $pagination-item-color-current: $white;
 $pagination-item-color-disabled: $medium-gray;
 $pagination-ellipsis-color: $black;
-$pagination-mobile-items: false;
-$pagination-mobile-current-item: false;
-$pagination-arrows: true;
+$pagination-mobile-items: true;
+$pagination-mobile-current-item: true;
+$pagination-arrows: false;
 // 28. Progress Bar
 // ----------------
 $progress-height: 1rem;

@@ -67,3 +67,14 @@
   padding: rem-calc(20 15);
   background-color: $white;
 }
+.custom-object {
+  padding: $global-padding;
+  border: 1px solid $light-gray;
+  background-color: $white;
+}
+.custom-object-picture {
+  display: block;
+  img {
+    width: 100%;
+  }
+}

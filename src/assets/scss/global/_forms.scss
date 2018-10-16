@@ -1,5 +1,6 @@
 .select {
   position: relative;
+  margin-bottom: rem-calc(20);
   background-color: $white;
   &:after {
     content: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOS45OSAxMSI+PHRpdGxlPmFuZ2xlLWRvd248L3RpdGxlPjxnIGlkPSI2NTcyMGZkMC1jYTFkLTRmMDMtYjIzZC1jYjU3YTg5YzVlMWQiIGRhdGEtbmFtZT0iTGF5ZXIgMiI+PGcgaWQ9IjE2NjIyM2Q2LTJkNDItNDU0ZC1hZGNiLWU5YmFlMWJkNDIzOCIgZGF0YS1uYW1lPSJMYXllciAxIj48cGF0aCBkPSJNMCwuNS40OCwwLDEwLDEwLDE5LjUyLDAsMjAsLjUsMTAsMTFaIiBzdHlsZT0iZmlsbDojMmMyYzJjIi8+PC9nPjwvZz48L3N2Zz4=);
@@ -20,6 +21,10 @@
     font-size: rem-calc(14);
     line-height: unitless-calc(22.1, 14);
     background-color: transparent;
+    &:focus {
+      box-shadow: none;
+      border-color: $light-gray;
+    }
   }
   &.plain {
     background-color: $body-background;
@@ -38,10 +43,6 @@
       font-weight: $global-weight-bold;
       letter-spacing: 0.1em;
       color: $anchor-color;
-      &:focus {
-        box-shadow: none;
-        border-color: $light-gray;
-      }
     }
   }
 }

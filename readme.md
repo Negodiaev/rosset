@@ -4,6 +4,7 @@
 
 - [Home page | Главная](https://negodiaev.github.io/rosset/)
 - [Catalog | Каталог](https://negodiaev.github.io/rosset/catalog.html)
+- [Category | Категория](https://negodiaev.github.io/rosset/category.html)
 - [404](https://negodiaev.github.io/rosset/error-page.html)
 
 ---

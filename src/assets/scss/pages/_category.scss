@@ -1,0 +1,40 @@
+.category-sidebar-card {
+  display: block;
+}
+.category-menu {
+  margin-bottom: rem-calc(25);
+  li,
+  a {
+    line-height: unitless-calc(18.05, 14);
+  }
+  li {
+    font-size: rem-calc(14);
+  }
+  & > li {
+    & + li {
+      border-top: 1px solid $light-gray;
+    }
+    & > a {
+      padding: rem-calc(16 10);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: $black;
+    }
+  }
+}
+.category-submenu {
+  padding-bottom: rem-calc(25);
+  li {
+    padding: rem-calc(6 0);
+    a {
+      color: $primary-color;
+    }
+    &:first-child {
+      padding-top: rem-calc(4);
+    }
+  }
+}
+.category-options {
+  padding: rem-calc(0 10);
+}
