@@ -30,6 +30,9 @@
   &.long {
     min-width: rem-calc(240);
   }
+  &.expanded {
+    width: 100%;
+  }
 }
 .burger {
   position: relative;

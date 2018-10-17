@@ -6,6 +6,8 @@
 - [Catalog | Каталог](https://negodiaev.github.io/rosset/catalog.html)
 - [Category | Категория](https://negodiaev.github.io/rosset/category.html)
 - [Product | Товар](https://negodiaev.github.io/rosset/product.html)
+- [Blog | Блог](https://negodiaev.github.io/rosset/blog.html)
+- [Publications | Публикации](https://negodiaev.github.io/rosset/publications.html)
 - [404](https://negodiaev.github.io/rosset/error-page.html)
 
 ---

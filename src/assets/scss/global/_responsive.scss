@@ -125,6 +125,9 @@
     margin-bottom: rem-calc(46);
     font-size: rem-calc(25);
   }
+  .sidebar-item {
+    padding: rem-calc(20 30 30);
+  }
 
   // Catalog page
   .selection-card {
@@ -291,6 +294,12 @@
     padding-top: rem-calc(34);
     padding-bottom: rem-calc(34);
   }
+  .blog-sidebar {
+    padding-top: rem-calc(10);
+  }
+  .sidebar-item {
+    padding: rem-calc(20 30 30);
+  }
 
   // Catalog page
   .catalog-kinds {
@@ -323,12 +332,22 @@
   .order-title {
     line-height: 1;
   }
+
+  // Blog page
+  .blog-title {
+    margin-bottom: rem-calc(40);
+  }
 }
 
 @include breakpoint(xlarge) {
   // Home page
   .footer-content {
     padding-left: rem-calc(28);
+  }
+
+  // Inner page
+  .subscribe-title {
+    margin-right: rem-calc(-8);
   }
 }
 

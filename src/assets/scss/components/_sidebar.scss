@@ -1,3 +1,41 @@
+.sidebar {
+  img {
+    margin-bottom: rem-calc(10);
+    width: 100%;
+  }
+}
 .sidebar-card {
   padding: rem-calc(20 10);
+}
+.sidebar-menu {
+  li,
+  a {
+    line-height: unitless-calc(17.0001, 13);
+  }
+  li {
+    font-size: rem-calc(13);
+    font-weight: $global-weight-bold;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    & + li {
+      border-top: 1px solid $medium-gray;
+    }
+  }
+  a {
+    padding: rem-calc(22 0);
+  }
+}
+.subscribe {
+  padding: rem-calc(20 0 8);
+  input {
+    margin-bottom: rem-calc(14);
+    font-size: rem-calc(14);
+    line-height: unitless-calc(20.05, 14);
+  }
+}
+.subscribe-title {
+  margin-bottom: rem-calc(22);
+  font-size: rem-calc(18);
+  line-height: unitless-calc(23, 18);
+  font-weight: 600;
 }
