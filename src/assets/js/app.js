@@ -114,4 +114,28 @@ document.addEventListener('DOMContentLoaded', function(event) {
       // crossFade: true
     }
   });
+
+  // product gallery
+  var productGallery = new Swiper('#product-gallery-main', {
+    // spaceBetween: 10,
+    lazy: {
+      loadPrevNext: true
+    },
+    navigation: {
+      nextEl: '#product-gallery-next',
+      prevEl: '#product-gallery-prev'
+    }
+  });
+  var galleryThumbs = new Swiper('#product-gallery-thumbs', {
+    spaceBetween: 12,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true,
+    lazy: {
+      loadPrevNext: true
+    }
+  });
+  productGallery.controller.control = galleryThumbs;
+  galleryThumbs.controller.control = productGallery;
 });

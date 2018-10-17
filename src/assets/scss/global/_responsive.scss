@@ -8,6 +8,7 @@
   .header-logo {
     display: flex;
     align-items: center;
+    max-width: rem-calc(380);
   }
   .header-phone-link {
     font-size: rem-calc(24);
@@ -135,6 +136,40 @@
   .special-card-title {
     margin-bottom: rem-calc(20);
   }
+
+  //Product page
+  .product-card,
+  .parameters-card {
+    padding: rem-calc(20);
+  }
+  .product-gallery-main {
+    margin-bottom: 17px;
+  }
+  .product-gallery-thumbs {
+    height: 72px;
+  }
+  .details-table-wrapper,
+  .parameters-table-wrapper {
+    margin-bottom: rem-calc(33);
+  }
+  .order {
+    border-width: 25px;
+  }
+  .order-content {
+    padding: rem-calc(60 60 40);
+  }
+  .order-title {
+    font-size: rem-calc(26);
+    &.bordered {
+      margin-bottom: rem-calc(70);
+      &:after {
+        bottom: rem-calc(-35);
+      }
+    }
+  }
+  .order-button {
+    margin-top: rem-calc(37);
+  }
 }
 
 @include breakpoint(large) {
@@ -195,7 +230,6 @@
   }
   .content-card {
     padding: rem-calc(71 85);
-    background-color: $white;
   }
   .about-content-card {
     margin-bottom: 0;
@@ -268,6 +302,26 @@
   .category-content-card {
     margin-bottom: rem-calc(40);
     padding: rem-calc(90 80 86);
+  }
+
+  //Product page
+  .product-card {
+    margin-bottom: rem-calc(45);
+    padding: rem-calc(30 20);
+  }
+  .parameters-card {
+    margin-bottom: rem-calc(80);
+    padding: rem-calc(0 9 33);
+  }
+  .parameters-table-wrapper {
+    margin-top: rem-calc(54);
+    margin-bottom: rem-calc(55);
+  }
+  .order {
+    margin-bottom: rem-calc(62);
+  }
+  .order-title {
+    line-height: 1;
   }
 }
 
@@ -386,5 +440,46 @@
   // Catalog page
   .selection-card {
     padding-left: 0;
+  }
+
+  //Product page
+  .details-table-wrapper {
+    padding-top: rem-calc(15);
+    padding-bottom: 0;
+  }
+  .details-table {
+    th,
+    td {
+      padding: rem-calc(10);
+      & + th,
+      & + td {
+        padding-top: 0;
+      }
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+  .parameters-table {
+    thead {
+      tr {
+        &:first-child {
+          th {
+            padding-top: rem-calc(18);
+            padding-bottom: rem-calc(18);
+          }
+        }
+        &:nth-child(2) {
+          th {
+            padding-top: rem-calc(15);
+            padding-bottom: rem-calc(15);
+          }
+        }
+      }
+    }
+    th,
+    td {
+      padding: rem-calc(10);
+    }
   }
 }

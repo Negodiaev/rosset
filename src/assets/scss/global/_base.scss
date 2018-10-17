@@ -85,6 +85,12 @@ svg {
         background-color: #fc0;
       }
     }
+    &.centered {
+      &:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
     &.lead {
       &:after {
         width: rem-calc(66);

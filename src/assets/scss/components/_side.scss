@@ -13,6 +13,10 @@
 }
 .side-menu {
   li {
+    font-size: rem-calc(13);
+    text-transform: uppercase;
+    font-weight: $global-weight-bold;
+    letter-spacing: 0.1em;
     & + li {
       border-top: 1px solid $medium-gray;
     }

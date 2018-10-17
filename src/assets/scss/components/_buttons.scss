@@ -20,10 +20,11 @@
     }
   }
   &.secondary {
-    color: $white;
+    color: #030303;
+    background-color: #ffd37f;
     &:hover,
     &:focus {
-      color: $white;
+      background-color: $body-background;
     }
   }
   &.long {

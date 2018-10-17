@@ -65,7 +65,11 @@
 .content-card {
   margin-bottom: rem-calc(10);
   padding: rem-calc(20 15);
+  border: 1px solid $light-gray;
   background-color: $white;
+  & > :last-child {
+    margin-bottom: 0;
+  }
 }
 .custom-object {
   padding: $global-padding;

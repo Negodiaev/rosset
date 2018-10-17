@@ -1,0 +1,104 @@
+.product-card {
+  padding-top: rem-calc(15);
+  padding-bottom: rem-calc(10);
+}
+.details-table-wrapper,
+.parameters-table-wrapper {
+  margin-bottom: rem-calc(20);
+}
+.details-table-wrapper {
+  padding: rem-calc(21 10 2);
+  background-color: #f5f5fa;
+}
+.details-table {
+  th,
+  td {
+    padding: rem-calc(11 16);
+    line-height: unitless-calc(20.0001, 15);
+  }
+  tr {
+    & + tr {
+      border-top: 1px solid #d5d5dd;
+    }
+  }
+  &.unstriped {
+    tr {
+      background-color: #f5f5fa;
+    }
+  }
+}
+.product-card-button {
+  margin-top: rem-calc(16);
+}
+.parameters-card {
+  padding: rem-calc(10 9);
+}
+.parameters-table {
+  margin-bottom: 5px;
+  font-size: rem-calc(13);
+  line-height: unitless-calc(16, 13);
+  thead,
+  tbody {
+    color: $black;
+  }
+  thead {
+    tr {
+      &:first-child {
+        background-color: #f5f5fa;
+        th {
+          padding-top: rem-calc(28);
+          padding-bottom: rem-calc(28);
+          font-size: rem-calc(14);
+          line-height: unitless-calc(17, 14);
+          font-weight: $global-weight-normal;
+        }
+      }
+      &:nth-child(2) {
+        th {
+          padding-top: rem-calc(23);
+          padding-bottom: rem-calc(23);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  tbody {
+    border-top: 1px solid #d5d5dd;
+    border-bottom: 1px solid #d5d5dd;
+  }
+  th,
+  td {
+    padding: rem-calc(16 20);
+    &:first-child {
+      padding-left: rem-calc(10);
+    }
+    & + th,
+    & + td {
+      border-left: 1px solid #d5d5dd;
+    }
+  }
+}
+.order {
+  border: 10px solid #241d7f;
+  color: $white;
+  background-color: $primary-color;
+  box-shadow: inset 0 0 0 5px #36308c;
+}
+.order-content {
+  margin-left: auto;
+  margin-right: auto;
+  padding: rem-calc(30 20);
+  max-width: rem-calc(760);
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
+.order-title {
+  font-size: rem-calc(23);
+  line-height: unitless-calc(30.05, 23);
+  font-weight: $global-weight-bold;
+}
+.order-button {
+  margin-top: rem-calc(15);
+  height: rem-calc(47.0001);
+}
