@@ -10,3 +10,8 @@
 .article-video {
   padding: rem-calc(10 0);
 }
+.about-card {
+  p {
+    line-height: unitless-calc(25, 15);
+  }
+}
