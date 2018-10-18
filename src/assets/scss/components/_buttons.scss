@@ -33,6 +33,14 @@
   &.expanded {
     width: 100%;
   }
+  &.show-more {
+    color: $anchor-color;
+    background-color: #e8e7e6;
+    &:hover,
+    &:focus {
+      background-color: $light-gray;
+    }
+  }
 }
 .burger {
   position: relative;

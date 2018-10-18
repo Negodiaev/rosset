@@ -60,12 +60,69 @@ button {
 a {
   line-height: 1;
 }
+ol,
+ul {
+  &.list {
+    margin: rem-calc(10 0 20);
+    li {
+      position: relative;
+      padding: rem-calc(15 0);
+      line-height: unitless-calc(20.0001, 15);
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+ol {
+  &.list {
+    list-style: none;
+    counter-reset: items-counter;
+    li {
+      padding-left: rem-calc(42);
+      &:before {
+        content: counter(items-counter);
+        counter-increment: items-counter;
+        display: inline-block;
+        width: rem-calc(32);
+        height: rem-calc(32);
+        font-size: rem-calc(16);
+        line-height: 2;
+        text-align: center;
+        background-color: #f1f1f1;
+      }
+    }
+  }
+}
+ul {
+  &.list {
+    li {
+      padding-left: rem-calc(17);
+      &:before {
+        content: '\2022';
+        font-size: rem-calc(26);
+        line-height: 20px;
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+  }
+}
 svg {
   display: inline-block;
   vertical-align: middle;
   &.icon {
     fill: currentColor;
   }
+}
+blockquote {
+  margin: rem-calc(20 0);
+  font-size: rem-calc(18);
+  line-height: unitless-calc(34, 20);
+  font-weight: 600;
 }
 .title {
   &.bordered {

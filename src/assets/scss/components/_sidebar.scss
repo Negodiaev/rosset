@@ -39,3 +39,21 @@
   line-height: unitless-calc(23, 18);
   font-weight: 600;
 }
+.sidebar-links {
+  &.simple {
+    align-items: flex-start;
+    li,
+    a {
+      line-height: unitless-calc(18.05, 14);
+    }
+    li {
+      padding: rem-calc(8 0);
+      font-size: rem-calc(14);
+      & + li {
+        margin-left: 0;
+      }
+    }
+    a {
+    }
+  }
+}

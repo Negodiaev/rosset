@@ -1,4 +1,24 @@
 @include breakpoint(medium) {
+  ol,
+  ul {
+    &.list {
+      margin-bottom: rem-calc(30);
+    }
+  }
+  blockquote {
+    margin-left: rem-calc(-16);
+    font-size: rem-calc(20);
+  }
+  .submit-button {
+    margin-top: rem-calc(17);
+    margin-bottom: rem-calc(20);
+  }
+  .form {
+    label {
+      line-height: unitless-calc(46, 14);
+    }
+  }
+
   // Home page
   .header-content {
     padding-top: rem-calc(13);
@@ -92,6 +112,9 @@
     p {
       margin-bottom: rem-calc(26);
     }
+    .feedback-date {
+      margin-bottom: rem-calc(18);
+    }
   }
   .links {
     &.simple {
@@ -125,8 +148,51 @@
     margin-bottom: rem-calc(46);
     font-size: rem-calc(25);
   }
+  .sidebar {
+    img {
+      margin-bottom: rem-calc(20);
+    }
+  }
   .sidebar-item {
     padding: rem-calc(20 30 30);
+  }
+  .banner-content {
+    padding: rem-calc(50 30 20);
+  }
+  .banner-title {
+    font-size: rem-calc(40);
+    line-height: unitless-calc(55, 40);
+    &.bordered {
+      &:after {
+        bottom: rem-calc(-30);
+      }
+    }
+  }
+  .content {
+    img {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .content-table {
+    th,
+    td {
+      &:last-child {
+        padding-right: 0;
+        text-align: right;
+        label {
+          float: right;
+        }
+      }
+    }
+  }
+  .video-title {
+    font-size: rem-calc(25);
+  }
+  .feedback-item {
+    margin-bottom: rem-calc(36);
+  }
+  .feedback-date {
+    margin-bottom: rem-calc(18);
   }
 
   // Catalog page
@@ -173,9 +239,49 @@
   .order-button {
     margin-top: rem-calc(37);
   }
+
+  // Article page
+  .article-table-block {
+    margin-left: rem-calc(-30);
+    margin-right: rem-calc(-30);
+    padding: rem-calc(20 0);
+  }
+  .article-content-table {
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(30);
+      }
+      &:last-child {
+        padding-right: rem-calc(30);
+      }
+    }
+  }
+  .article-video {
+    padding-top: rem-calc(18);
+    padding-bottom: rem-calc(17);
+  }
 }
 
 @include breakpoint(large) {
+  ol,
+  ul {
+    &.list {
+      margin-top: rem-calc(35);
+      margin-bottom: rem-calc(50);
+    }
+  }
+  blockquote {
+    margin-top: rem-calc(52);
+    margin-bottom: rem-calc(52);
+  }
+  .form {
+    input,
+    textarea {
+      margin-bottom: rem-calc(30);
+    }
+  }
+
   // Home page
   .main {
     padding-bottom: rem-calc(38);
@@ -300,6 +406,20 @@
   .sidebar-item {
     padding: rem-calc(20 30 30);
   }
+  .banner {
+    margin-bottom: rem-calc(45);
+  }
+  .banner-content {
+    padding: rem-calc(108 70 70);
+  }
+  .content {
+    img {
+      margin-bottom: rem-calc(42);
+    }
+  }
+  .feedback-items {
+    padding-bottom: rem-calc(23);
+  }
 
   // Catalog page
   .catalog-kinds {
@@ -336,6 +456,32 @@
   // Blog page
   .blog-title {
     margin-bottom: rem-calc(40);
+  }
+
+  // Article page
+  .article-card {
+    margin-bottom: rem-calc(40);
+    padding: rem-calc(56 40 50);
+  }
+  .article-objects {
+    padding-bottom: rem-calc(21);
+  }
+  .article-table-block {
+    margin-left: rem-calc(-40);
+    margin-right: rem-calc(-40);
+    padding-top: rem-calc(60);
+    padding-bottom: rem-calc(52);
+  }
+  .article-content-table {
+    th,
+    td {
+      &:first-child {
+        padding-left: rem-calc(40);
+      }
+      &:last-child {
+        padding-right: rem-calc(40);
+      }
+    }
   }
 }
 
@@ -415,6 +561,10 @@
 }
 
 @include breakpoint(small only) {
+  .small-expanded {
+    width: 100%;
+  }
+
   // Home page
   .lead {
     font-size: rem-calc(18);
@@ -499,6 +649,38 @@
     th,
     td {
       padding: rem-calc(10);
+    }
+  }
+
+  // Article page
+  .article-content-table {
+    thead {
+      background-color: #f9f9f9;
+    }
+    th,
+    td {
+      padding-left: rem-calc(15);
+      padding-right: rem-calc(15);
+      &:first-child,
+      &:last-child {
+        padding-left: rem-calc(15);
+        padding-right: rem-calc(15);
+      }
+    }
+    th {
+      &:last-child {
+        padding: 0;
+      }
+    }
+    td {
+      padding-top: rem-calc(6);
+      padding-bottom: rem-calc(6);
+      &:first-child {
+        padding-top: rem-calc(20);
+      }
+      &:last-child {
+        padding-bottom: rem-calc(20);
+      }
     }
   }
 }

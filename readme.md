@@ -8,6 +8,7 @@
 - [Product | Товар](https://negodiaev.github.io/rosset/product.html)
 - [Blog | Блог](https://negodiaev.github.io/rosset/blog.html)
 - [Publications | Публикации](https://negodiaev.github.io/rosset/publications.html)
+- [Article | Статья](https://negodiaev.github.io/rosset/article.html)
 - [404](https://negodiaev.github.io/rosset/error-page.html)
 
 ---
