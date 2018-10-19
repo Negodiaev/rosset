@@ -194,6 +194,12 @@
   .feedback-date {
     margin-bottom: rem-calc(18);
   }
+  .map {
+    height: rem-calc(400);
+  }
+  .dealers-map {
+    height: rem-calc(360);
+  }
 
   // Catalog page
   .selection-card {
@@ -261,6 +267,20 @@
     padding-top: rem-calc(18);
     padding-bottom: rem-calc(17);
   }
+
+  // Contacts page
+  .contact-card {
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+  }
+  .contact-item-title {
+    &.tel {
+      font-size: rem-calc(22);
+    }
+  }
+  .contact-detail-title {
+    margin-bottom: rem-calc(27);
+  }
 }
 
 @include breakpoint(large) {
@@ -300,6 +320,9 @@
   }
   .section-title {
     margin-bottom: rem-calc(34);
+  }
+  .page-title {
+    margin-bottom: rem-calc(20);
   }
   .hero {
     padding-bottom: rem-calc(10);
@@ -420,6 +443,12 @@
   .feedback-items {
     padding-bottom: rem-calc(23);
   }
+  .map {
+    height: rem-calc(560);
+  }
+  .dealers-map {
+    height: rem-calc(500);
+  }
 
   // Catalog page
   .catalog-kinds {
@@ -482,6 +511,34 @@
         padding-right: rem-calc(40);
       }
     }
+  }
+
+  // Contacts page
+  .contact-card {
+    padding: rem-calc(16 30);
+  }
+  .contact-info-card {
+    overflow: auto;
+    margin-right: rem-calc(-20);
+    height: 100%;
+    max-height: rem-calc(560);
+  }
+  .contact-map {
+    margin-left: rem-calc(20);
+  }
+  .contact-details {
+    margin-bottom: rem-calc(36);
+    padding: rem-calc(40 30 26);
+  }
+  .contacts-about-card {
+    margin-bottom: 0;
+    padding: rem-calc(50 30 45);
+  }
+  .dealers {
+    padding-bottom: rem-calc(9);
+  }
+  .dealer {
+    padding: rem-calc(30 30 20);
   }
 }
 
@@ -682,5 +739,13 @@
         padding-bottom: rem-calc(20);
       }
     }
+  }
+
+  // Contacts page
+  .contact-details {
+    padding-bottom: rem-calc(5);
+  }
+  .contact-detail {
+    margin-bottom: rem-calc(30);
   }
 }

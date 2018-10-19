@@ -1,0 +1,59 @@
+.contact-card {
+  padding: rem-calc(10 15);
+}
+.contact-item {
+  padding: rem-calc(17 0);
+  font-size: rem-calc(14);
+  line-height: unitless-calc(23.05, 14);
+  & + .contact-item {
+    border-top: 1px solid #cacaca;
+  }
+}
+.contact-item-title {
+  margin-bottom: rem-calc(8);
+  line-height: unitless-calc(23.05, 20);
+  font-weight: $global-weight-normal;
+  a {
+    color: #0778a7;
+    &:hover,
+    &:focus {
+      color: $anchor-color-hover;
+    }
+  }
+  &.tel {
+    margin-bottom: rem-calc(14);
+    font-size: rem-calc(21);
+    line-height: unitless-calc(23.0001, 22);
+    font-weight: 300;
+  }
+}
+.contact-detail {
+  line-height: unitless-calc(23.0001, 15);
+}
+.contact-detail-title {
+  margin-bottom: rem-calc(15);
+  line-height: unitless-calc(23.05, 17);
+}
+.contact-detail-row {
+  margin-bottom: rem-calc(15);
+}
+.contacts-section-title {
+  color: $black;
+}
+.dealer-title {
+  margin-bottom: rem-calc(6);
+  line-height: unitless-calc(26.05, 20);
+  font-weight: 600;
+}
+.dealer-city {
+  margin-bottom: rem-calc(19);
+  line-height: unitless-calc(17.0001, 15);
+  color: $secondary-color;
+}
+.dealer-info {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(17.05, 14);
+}
+.dealer-info-row {
+  margin-bottom: rem-calc(7);
+}

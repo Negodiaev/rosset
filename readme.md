@@ -10,6 +10,7 @@
 - [Publications | Публикации](https://negodiaev.github.io/rosset/publications.html)
 - [Article | Статья](https://negodiaev.github.io/rosset/article.html)
 - [About | О компании](https://negodiaev.github.io/rosset/about.html)
+- [Contacts | Контакты](https://negodiaev.github.io/rosset/contacts.html)
 - [404](https://negodiaev.github.io/rosset/error-page.html)
 
 ---

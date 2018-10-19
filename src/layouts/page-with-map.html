@@ -1,0 +1,65 @@
+{{!-- This is the base layout for your project, and will be used on every page unless specified. --}}
+
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{meta-title}} | Rosset</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" media="all and (min-width: 960px)">
+  <link rel="stylesheet" href="{{root}}assets/css/app.css">
+</head>
+
+<body>
+
+  <div class="off-canvas-wrapper">
+    <div id="offCanvas" class="side off-canvas position-right text-center" data-off-canvas>
+      <div class="side-options-panel options-panel flex-container align-center">
+        <button class="side-search-toggle search-toggle" type="button">
+          <svg class="icon" width="17" height="17">
+            <use xlink:href="#magnifier"></use>
+          </svg>
+        </button>
+        <div class="options-panel-select select plain">
+          <select>
+            <option value="ru">Ru</option>
+            <option value="en">En</option>
+          </select>
+        </div>
+      </div>
+      <!-- /.options-panel -->
+      <ul class="side-menu vertical menu">
+        <li><a href="about.html">О компании</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="category.html">Услуги</a></li>
+        <li><a href="publications.html">Публикации</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+      <!-- /.side-menu -->
+    </div>
+    <!-- /.off-canvas -->
+    <div class="off-canvas-content" data-off-canvas-content>
+      <div class="sticky-footer">
+        {{> header}}
+        <main class="main">
+          {{> breadcrumbs}}
+          {{> body}}
+        </main>
+        {{> footer}}
+      </div>
+      <!-- /.sticky-footer -->
+    </div>
+    <!-- /.off-canvas-content -->
+  </div>
+  <!-- /.off-canvas-wrapper -->
+
+  <div class="sprite-container"> {{> sprite}} </div>
+
+  {{> map-init}}
+  <script src="{{root}}assets/js/app.js"></script>
+
+</body>
+
+</html>

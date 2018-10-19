@@ -105,3 +105,11 @@
 .feedback-date {
   color: $secondary-color;
 }
+.map {
+  width: 100%;
+  height: rem-calc(300);
+  border: 7px solid $white;
+}
+.dealers-map {
+  height: rem-calc(486);
+}
