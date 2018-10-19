@@ -281,6 +281,21 @@
   .contact-detail-title {
     margin-bottom: rem-calc(27);
   }
+
+  // Staff page
+  .staff-content-title {
+    font-size: rem-calc(23);
+  }
+  .chief-card-picture {
+    min-height: rem-calc(268);
+  }
+  .chief-card-info {
+    padding-bottom: rem-calc(40);
+  }
+  .chief-card-title,
+  .chief-panel-title {
+    font-size: rem-calc(18);
+  }
 }
 
 @include breakpoint(large) {
@@ -320,9 +335,6 @@
   }
   .section-title {
     margin-bottom: rem-calc(34);
-  }
-  .page-title {
-    margin-bottom: rem-calc(20);
   }
   .hero {
     padding-bottom: rem-calc(10);
@@ -540,6 +552,27 @@
   .dealer {
     padding: rem-calc(30 30 20);
   }
+
+  // Staff page
+  .staff-title {
+    margin-bottom: rem-calc(38);
+  }
+  .staff-card {
+    margin-bottom: rem-calc(25);
+    padding: rem-calc(43 30);
+  }
+  .staff-content-title {
+    margin-bottom: rem-calc(24);
+  }
+  .chiefs {
+    padding-bottom: rem-calc(25);
+  }
+  .chief-panel {
+    padding: rem-calc(40 30 50);
+  }
+  .chief-panel-title {
+    margin-bottom: rem-calc(28);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -552,10 +585,28 @@
   .subscribe-title {
     margin-right: rem-calc(-8);
   }
+
+  // Staff page
+  .chief-card-wrapper {
+    .chief-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+  }
 }
 
 @include breakpoint(1280px) {
   // Home page
+}
+
+@include breakpoint(large down) {
+  // Staff page
+  .chiefs-tabs {
+    .chief-card {
+      text-align: center;
+    }
+  }
 }
 
 @include breakpoint(medium down) {
@@ -564,6 +615,11 @@
     & + .section {
       padding-top: 0;
     }
+  }
+
+  // Staff page
+  .chief-card {
+    text-align: center;
   }
 }
 

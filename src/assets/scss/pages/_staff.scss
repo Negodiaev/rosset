@@ -1,0 +1,106 @@
+.staff-content-title {
+  margin-bottom: rem-calc(10);
+  font-size: rem-calc(21);
+  line-height: unitless-calc(32.05, 23);
+  font-weight: 600;
+}
+.chiefs-list {
+  .chief-card {
+    font-size: rem-calc(16);
+    line-height: unitless-calc(22, 16);
+  }
+}
+.chiefs-tabs {
+  margin-left: rem-calc(-10);
+  margin-right: rem-calc(-10);
+  border: 0;
+}
+.chief-card-wrapper {
+  .chief-card {
+    position: relative;
+    overflow: visible;
+    height: auto;
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+    }
+    &:before {
+      width: 100%;
+      height: 9px;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: transparent;
+    }
+    &:after {
+      bottom: -7px;
+      left: 50%;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 8px 0 8px;
+      border-color: transparent transparent transparent transparent;
+      transform: translateX(-50%);
+    }
+  }
+  &.is-active {
+    .chief-card {
+      &:before {
+        background-color: $anchor-color;
+        transition: background-color 0.15s ease-in-out;
+      }
+      &:after {
+        border-color: $anchor-color transparent transparent transparent;
+        transition: border-color 0.15s ease-in-out 0.15s;
+      }
+    }
+  }
+}
+.chief-card,
+:last-child:not(.is-active) > .accordion-title {
+  &:hover {
+    border-color: $anchor-color;
+  }
+}
+.chief-card-picture {
+  min-height: rem-calc(228);
+}
+.chief-card-info {
+  padding-bottom: rem-calc(20);
+}
+.chief-card-title,
+.chief-card-tel {
+  color: $body-font-color;
+}
+.chief-card-title,
+.chief-panel-title {
+  font-size: rem-calc(17);
+  line-height: unitless-calc(25, 18);
+  font-weight: $global-weight-bold;
+}
+.chief-card-title {
+  margin-bottom: rem-calc(10);
+}
+.chief-card-role {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(19.05, 14);
+  color: $secondary-color;
+}
+.chief-card-contact {
+  flex-grow: 0;
+  margin-top: auto;
+  padding-bottom: rem-calc(30);
+}
+.chief-card-tel {
+  margin-bottom: rem-calc(6);
+}
+.chief-card-mail {
+  color: $primary-color;
+}
+.chief-panel {
+  margin: rem-calc(17 0 0);
+}
+.chief-panel-title {
+  margin-bottom: rem-calc(15);
+}
