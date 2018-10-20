@@ -200,6 +200,18 @@
   .dealers-map {
     height: rem-calc(360);
   }
+  .timeline-card {
+    padding: rem-calc(33 60 33 10);
+  }
+  .timeline-item {
+    &:not(:last-child) {
+      background-position: 63px 0;
+    }
+  }
+  .timeline-item-date {
+    flex-basis: rem-calc(128);
+    padding: rem-calc(22 10);
+  }
 
   // Catalog page
   .selection-card {
@@ -403,15 +415,16 @@
   }
   .footer-content {
     padding-top: rem-calc(12);
+    padding-left: rem-calc(10);
   }
   .links-col {
     & + .links-col {
       border-left: 1px solid #302c68;
+      .links-col-title,
+      .links {
+        padding-left: rem-calc(10);
+      }
     }
-  }
-  .links-col-title,
-  .links {
-    padding-left: rem-calc(10);
   }
   .links-col-title {
     margin-bottom: rem-calc(28);
@@ -460,6 +473,10 @@
   }
   .dealers-map {
     height: rem-calc(500);
+  }
+  .timeline-card {
+    margin-bottom: rem-calc(100);
+    padding: rem-calc(33 60 33 10);
   }
 
   // Catalog page
@@ -585,6 +602,9 @@
   .subscribe-title {
     margin-right: rem-calc(-8);
   }
+  .timeline-card {
+    padding-right: rem-calc(100);
+  }
 
   // Staff page
   .chief-card-wrapper {
@@ -594,10 +614,6 @@
       height: 100%;
     }
   }
-}
-
-@include breakpoint(1280px) {
-  // Home page
 }
 
 @include breakpoint(large down) {
@@ -802,6 +818,32 @@
     padding-bottom: rem-calc(5);
   }
   .contact-detail {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  // Inner page
+  .timeline-card {
+    padding: rem-calc(20 15 10);
+  }
+  .timeline {
+    padding-bottom: 0;
+  }
+  .timeline-item {
+    display: block;
+    &:not(:last-child) {
+      background-image: none;
+    }
+  }
+  .timeline-item-date,
+  .timeline-item-content {
+    padding: 0;
+  }
+  .timeline-item-date {
+    margin-bottom: rem-calc(10);
+  }
+  .timeline-item-content {
     margin-bottom: rem-calc(30);
   }
 }

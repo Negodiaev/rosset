@@ -1,0 +1,40 @@
+.timeline-card {
+  padding: rem-calc(20 40 20 10);
+}
+.timeline {
+  padding-bottom: rem-calc(20);
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  &:not(:last-child) {
+    background-image: repeating-linear-gradient(
+      to top,
+      #d2ac64,
+      #d2ac64 9px,
+      transparent 0,
+      transparent 20px
+    );
+    background-size: 2px 20px;
+    background-position: 49px 0;
+    background-repeat: repeat-y;
+  }
+}
+.timeline-item-date {
+  flex: 0 0 rem-calc(100);
+  margin: 0;
+  padding: rem-calc(25 10 10);
+  line-height: unitless-calc(47.05, 35);
+  text-align: center;
+  color: #d2ac64;
+  background-color: $white;
+}
+.timeline-item-content {
+  padding-top: rem-calc(26);
+  & > img {
+    width: 100%;
+  }
+  & > :last-child {
+    margin-bottom: 0;
+  }
+}
