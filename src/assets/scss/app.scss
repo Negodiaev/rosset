@@ -68,6 +68,7 @@
 @import 'mixins/push-center';
 @import 'mixins/sidelines';
 @import 'mixins/zindex';
+@import 'mixins/placeholder';
 
 // global styles
 @import 'global/fonts';
@@ -100,6 +101,7 @@
 @import 'pages/article';
 @import 'pages/contacts';
 @import 'pages/staff';
+@import 'pages/error-page';
 
 // media queries
 @import 'global/responsive';

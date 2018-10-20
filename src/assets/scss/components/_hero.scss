@@ -1,4 +1,5 @@
 .hero-slider {
+  background-color: $primary-color;
   .swiper-pagination {
     padding-left: rem-calc(10);
     padding-right: rem-calc(10);
@@ -25,6 +26,7 @@
   }
 }
 .hero-slide-content {
+  box-sizing: border-box;
   padding: rem-calc(10 15 40);
   color: $white;
   background-color: $primary-color;

@@ -1,0 +1,50 @@
+.error-card {
+  padding: rem-calc(30 15 10);
+}
+.error-picture {
+  margin-bottom: rem-calc(30);
+  svg {
+    max-width: 100%;
+  }
+}
+.error-title {
+  margin-bottom: rem-calc(10);
+  line-height: unitless-calc(42, 30);
+  font-weight: $global-weight-normal;
+}
+.error-message {
+  margin-bottom: rem-calc(30);
+  a {
+    display: inline-block;
+    border-bottom: 1px solid #251e81;
+    color: #251e81;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+      color: #251e81;
+    }
+  }
+}
+.error-search {
+  input,
+  button {
+    margin-bottom: rem-calc(15);
+    padding: rem-calc(16 10);
+    height: rem-calc(58);
+  }
+  input {
+    border: 3px solid #251e81;
+    font-size: rem-calc(14);
+    line-height: unitless-calc(19.001, 14);
+    @include placeholder {
+      color: #2c2c2c;
+    }
+    &:hover,
+    &:focus {
+      border: 3px solid #251e81;
+    }
+  }
+}
+.error-search-submit {
+  min-width: rem-calc(130);
+}
