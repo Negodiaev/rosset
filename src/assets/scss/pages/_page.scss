@@ -31,6 +31,7 @@
   color: $body-font-color;
 }
 .banner {
+  height: rem-calc(260);
   background-color: $primary-color;
 }
 .banner-content {
@@ -49,7 +50,6 @@
 .content {
   img {
     margin-bottom: rem-calc(15);
-    width: 100%;
   }
 }
 .content-table {

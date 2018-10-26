@@ -6,7 +6,7 @@ meta-title: Статья
 <div class="grid-container">
   <div class="banner picture-container content-block">
     <img src="assets/img/banner.jpg" alt="">
-    <div class="banner-content">
+    <div class="banner-content flex-container flex-direction-column align-middle">
       <h1 class="banner-title title bordered secondary h1">В лингвистике термин «текст» используется в широком
         значении, включая</h1>
     </div>
@@ -29,20 +29,12 @@ meta-title: Статья
         <p>Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение,
           объективированное в виде письменного документа, состоящее из ряда высказываний, объединённых разными типами
           лексической, грамматической и логической связи, имеющее определённый моральный</p>
-        <div class="grid-container full">
-          <div class="grid-x grid-padding-x">
-            <div class="cell medium-6">
-              <img src="assets/img/article/2.jpg" alt="">
-            </div>
-            <div class="cell medium-6">
-              <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
-                Восприятие
-                текста изучается в рамках лингвистики текста и психолингвистики.</p>
-              <p>Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение,
-                объективированное в виде</p>
-            </div>
-          </div>
-        </div>
+        <img src="assets/img/article/2.jpg" class="float-left" alt="">
+        <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи.
+          Восприятие
+          текста изучается в рамках лингвистики текста и психолингвистики.</p>
+        <p>Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение,
+          объективированное в виде</p>
         <div class="article-table-block table-block">
           <table class="article-content-table content-table stack unstriped">
             <thead>
@@ -180,20 +172,18 @@ meta-title: Статья
       </div>
       <!-- /.article-card -->
       <div class="article-objects content-block">
-        <div class="custom-object media-object stack-for-small">
-          <div class="media-object-section">
-            <a href="#" class="custom-object-picture">
-              <img src="assets/img/category/5.jpg" alt="">
-            </a>
+        <a href="#" class="custom-object media-object stack-for-small">
+          <div class="custom-object-picture picture-container media-object-section">
+            <img src="assets/img/category/5.jpg" alt="">
           </div>
           <div class="media-object-section main-section">
-            <div class="custom-object-title h3"><a href="#">Росомаха</a></div>
+            <div class="custom-object-title h3">Росомаха</div>
             <p>В лингвистике термин «текст» используется в широком значении, включая и образцы устной речи. Восприятие
               текста изучается в рамках лингвистики текста и психолингвистики.</p>
             <p>Так, например, И. Р. Гальперин определяет текст следующим образом: «это письменное сообщение,
               объективированное в виде письменного документа,</p>
           </div>
-        </div>
+        </a>
         <!-- /.custom-object -->
         <button type="button" class="show-more button expanded">Все статьи</button>
       </div>
@@ -220,7 +210,9 @@ meta-title: Статья
         </div>
       </div>
       <!-- /.sidebar-item -->
-      <img src="assets/img/person.jpg" alt="">
+      <div class="text-center">
+        <img src="assets/img/person.jpg" alt="">
+      </div>
       <div class="sidebar-item content-card content-block">
         <div class="subscribe">
           <div class="article-subscribe-title subscribe-title">В тему</div>

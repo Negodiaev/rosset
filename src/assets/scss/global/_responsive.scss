@@ -101,8 +101,14 @@
   .shareholders {
     padding-top: 0;
   }
+  .shareholders-card-picture {
+    height: rem-calc(175);
+  }
   .custom-card-info {
     padding: rem-calc(26 26 36);
+  }
+  .publications-card-picture {
+    height: rem-calc(180);
   }
   .articles-card-info {
     padding-bottom: rem-calc(48);
@@ -139,7 +145,8 @@
     }
   }
   .custom-object-picture {
-    max-width: rem-calc(180);
+    margin-right: rem-calc(20);
+    width: rem-calc(160);
   }
   .custom-object-title {
     margin-bottom: rem-calc(24);
@@ -156,8 +163,12 @@
   .sidebar-item {
     padding: rem-calc(20 30 30);
   }
+  .banner {
+    height: rem-calc(425);
+  }
   .banner-content {
-    padding: rem-calc(50 30 20);
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
   }
   .banner-title {
     font-size: rem-calc(40);
@@ -217,6 +228,9 @@
   .selection-card {
     min-height: rem-calc(129);
   }
+  .special-card-picture {
+    height: rem-calc(182);
+  }
   .special-card-info {
     padding: rem-calc(32);
   }
@@ -231,6 +245,7 @@
   }
   .product-gallery-main {
     margin-bottom: 17px;
+    height: rem-calc(400);
   }
   .product-gallery-thumbs {
     height: 72px;
@@ -391,7 +406,6 @@
       top: 50%;
       left: 0;
       margin: 0;
-      min-height: 100%;
       max-width: none;
       transform: translate(0, -50%);
     }
@@ -407,6 +421,12 @@
   }
   .content-card {
     padding: rem-calc(71 85);
+  }
+  .shareholders-card-picture {
+    height: rem-calc(190);
+  }
+  .publications-card-picture {
+    height: rem-calc(359);
   }
   .about-content-card {
     margin-bottom: 0;
@@ -479,7 +499,8 @@
     margin-bottom: rem-calc(45);
   }
   .banner-content {
-    padding: rem-calc(108 70 70);
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(70);
   }
   .content {
     img {
@@ -506,6 +527,9 @@
   }
   .special-section {
     padding-bottom: 0;
+  }
+  .special-card-picture {
+    height: rem-calc(240);
   }
   .category-content-card {
     margin-bottom: rem-calc(40);
@@ -658,6 +682,9 @@
   .hero-slide-inner {
     overflow: hidden;
   }
+  .shareholders-card-picture {
+    height: rem-calc(229);
+  }
   .footer-content {
     padding-left: rem-calc(28);
   }
@@ -800,6 +827,19 @@
         display: list-item;
       }
     }
+  }
+  .custom-object {
+    &.stack-for-small {
+      .custom-object-picture {
+        padding-bottom: 0;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+  .custom-object-picture {
+    margin-bottom: rem-calc(20);
   }
   .pagination {
     margin-bottom: rem-calc(20);

@@ -12,11 +12,6 @@
 .delivery-map {
   padding-top: 0;
 }
-.delivery-map-picture {
-  & > img {
-    min-width: 100%;
-  }
-}
 .news {
   padding-bottom: 0;
 }
@@ -31,9 +26,7 @@
   }
 }
 .custom-card-picture {
-  & > img {
-    width: 100%;
-  }
+  text-align: center;
 }
 .custom-card-info {
   padding-bottom: rem-calc(20);
@@ -41,6 +34,9 @@
 .custom-card-title {
   margin-bottom: rem-calc(13);
   line-height: unitless-calc(25.03, 17);
+}
+.shareholders-card-picture {
+  height: rem-calc(170);
 }
 .purchase {
   justify-content: space-between;
@@ -61,6 +57,9 @@
   margin-left: rem-calc(15);
   line-height: unitless-calc(19, 15);
   font-weight: $global-weight-bold;
+}
+.publications-card-picture {
+  height: rem-calc(175);
 }
 .partners-blocks-cell {
   margin-bottom: rem-calc(20);

@@ -31,9 +31,6 @@
 }
 .timeline-item-content {
   padding-top: rem-calc(26);
-  & > img {
-    width: 100%;
-  }
   & > :last-child {
     margin-bottom: 0;
   }

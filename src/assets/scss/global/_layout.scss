@@ -12,8 +12,6 @@
     top: 50%;
     left: 50%;
     margin: 0;
-    min-width: 100%;
-    min-height: 100%;
     max-width: none;
     transform: translate(-50%, -50%);
   }
@@ -28,9 +26,6 @@
     &:focus {
       color: $anchor-color-hover;
     }
-  }
-  & > img {
-    width: 100%;
   }
 }
 .card-section {
@@ -74,11 +69,19 @@
 .custom-object {
   padding: $global-padding;
   border: 1px solid $light-gray;
+  color: $body-font-color;
   background-color: $white;
+  &:hover,
+  &:focus {
+    color: $body-font-color;
+    .custom-object-title {
+      color: $anchor-color;
+    }
+  }
 }
 .custom-object-picture {
-  display: block;
-  img {
-    width: 100%;
+  height: rem-calc(160);
+  &:first-child {
+    padding: 0;
   }
 }

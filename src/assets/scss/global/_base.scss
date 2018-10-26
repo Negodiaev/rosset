@@ -111,6 +111,11 @@ ul {
     }
   }
 }
+img {
+  &.float-left {
+    margin: rem-calc(0 20 20 0);
+  }
+}
 svg {
   display: inline-block;
   vertical-align: middle;

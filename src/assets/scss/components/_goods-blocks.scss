@@ -7,6 +7,9 @@
     }
   }
 }
+.goods-card-picture {
+  height: rem-calc(150);
+}
 .goods-card-content {
   display: flex;
   flex-direction: column;
