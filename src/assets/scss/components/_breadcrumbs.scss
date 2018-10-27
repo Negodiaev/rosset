@@ -18,4 +18,21 @@
       color: $anchor-color;
     }
   }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(10);
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(12);
+    li {
+      display: none;
+      max-width: 100%;
+      font-size: rem-calc(13);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      &:first-child,
+      &:last-child {
+        display: inline-block;
+      }
+    }
+  }
 }

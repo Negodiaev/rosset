@@ -1,16 +1,40 @@
 .error-card {
   padding: rem-calc(30 15 10);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(37);
+    padding: rem-calc(152 80 132);
+  }
 }
 .error-picture {
   margin-bottom: rem-calc(30);
   svg {
     max-width: 100%;
   }
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(40);
+  }
+  @include breakpoint(large) {
+    margin-bottom: 0;
+  }
+}
+.error-info {
+  @include breakpoint(large) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .error-title {
   margin-bottom: rem-calc(10);
   line-height: unitless-calc(42, 30);
   font-weight: $global-weight-normal;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(20);
+    font-size: rem-calc(30);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(30);
+  }
 }
 .error-message {
   margin-bottom: rem-calc(30);
@@ -44,7 +68,36 @@
       border: 3px solid #251e81;
     }
   }
+  @include breakpoint(medium) {
+    position: relative;
+    input {
+      padding-right: rem-calc(140);
+    }
+  }
+  @include breakpoint(large) {
+    input,
+    button {
+      margin-bottom: 0;
+    }
+    input {
+      padding-left: rem-calc(23);
+    }
+  }
+  @include breakpoint(xlarge) {
+    input {
+      padding-right: rem-calc(190);
+    }
+  }
 }
 .error-search-submit {
   min-width: rem-calc(130);
+  @include breakpoint(medium) {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @include breakpoint(xlarge) {
+    min-width: rem-calc(180);
+  }
 }

@@ -1,6 +1,11 @@
 .category-sidebar-card {
   display: block;
 }
+.category-menu-wrapper {
+  @include breakpoint(medium only) {
+    border-right: 1px solid $light-gray;
+  }
+}
 .category-menu {
   margin-bottom: rem-calc(25);
   li,
@@ -22,6 +27,9 @@
       color: $black;
     }
   }
+  @include breakpoint(medium only) {
+    margin-bottom: 0;
+  }
 }
 .category-submenu {
   padding-bottom: rem-calc(25);
@@ -37,4 +45,17 @@
 }
 .category-options {
   padding: rem-calc(0 10);
+  @include breakpoint(medium only) {
+    padding-left: 0;
+    padding-right: 0;
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.category-content-card {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(40);
+    padding: rem-calc(90 80 86);
+  }
 }

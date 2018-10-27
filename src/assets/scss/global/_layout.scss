@@ -1,8 +1,41 @@
+.main {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(38);
+  }
+}
 .section {
   padding: rem-calc(10 0);
   @include breakpoint(medium) {
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
+  }
+  @include breakpoint(large) {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(36);
+  }
+  @include breakpoint(medium down) {
+    & + .section {
+      padding-top: 0;
+    }
+    & + .shareholders {
+      padding-top: rem-calc(20);
+    }
+  }
+  @include breakpoint(small only) {
+    & + .shareholders {
+      padding-top: rem-calc(10);
+    }
+  }
+}
+.section-part {
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.section-part-title {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(20);
   }
 }
 .picture-container,
@@ -36,6 +69,9 @@
   & + .card-section {
     padding-top: 0;
   }
+  @include breakpoint(medium) {
+    padding: rem-calc(30);
+  }
 }
 .card-picture {
   display: flex;
@@ -44,6 +80,9 @@
   flex: 0 0 auto;
   overflow: hidden;
   min-height: rem-calc(150);
+  @include breakpoint(medium) {
+    min-height: rem-calc(217);
+  }
 }
 .card-info {
   p {
@@ -56,6 +95,9 @@
 .blocks-cell,
 .content-block {
   margin-bottom: rem-calc(10);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(20);
+  }
 }
 .blocks-card {
   margin-bottom: 0;
@@ -68,6 +110,18 @@
   background-color: $white;
   & > :last-child {
     margin-bottom: 0;
+  }
+  @include breakpoint(medium) {
+    padding: rem-calc(30);
+    p {
+      margin-bottom: rem-calc(26);
+    }
+    .feedback-date {
+      margin-bottom: rem-calc(18);
+    }
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(71 85);
   }
 }
 .custom-object {
@@ -82,10 +136,46 @@
       color: $anchor-color;
     }
   }
+  @include breakpoint(medium) {
+    padding: rem-calc(30);
+    p {
+      margin-bottom: rem-calc(26);
+    }
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(20);
+  }
+  @include breakpoint(small only) {
+    &.stack-for-small {
+      .custom-object-picture {
+        padding-bottom: 0;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
 }
 .custom-object-picture {
   height: rem-calc(160);
   &:first-child {
     padding: 0;
+  }
+  @include breakpoint(medium) {
+    margin-right: rem-calc(20);
+    width: rem-calc(160);
+  }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(20);
+  }
+}
+.custom-object-title {
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(24);
+  }
+}
+.small-expanded {
+  @include breakpoint(small only) {
+    width: 100%;
   }
 }

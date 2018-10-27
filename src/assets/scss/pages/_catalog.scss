@@ -1,3 +1,8 @@
+.catalog-kinds {
+  @include breakpoint(large) {
+    padding-top: rem-calc(30);
+  }
+}
 .selection-card {
   flex-direction: row;
   align-items: center;
@@ -5,6 +10,12 @@
   &:hover,
   &:focus {
     color: $anchor-color;
+  }
+  @include breakpoint(medium) {
+    min-height: rem-calc(129);
+  }
+  @include breakpoint(small only) {
+    padding-left: 0;
   }
 }
 .selection-card-picture {
@@ -21,9 +32,42 @@
   font-size: rem-calc(16);
   line-height: unitless-calc(25, 16);
 }
+.special-section {
+  @include breakpoint(large) {
+    padding-bottom: 0;
+  }
+}
+.special-card {
+  &:hover,
+  &:focus {
+    color: $body-font-color;
+    .special-card-title {
+      color: $anchor-color;
+    }
+  }
+}
 .special-card-picture {
   height: rem-calc(177);
+  & > img {
+    max-height: 100%;
+  }
+  @include breakpoint(medium) {
+    height: rem-calc(182);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(240);
+  }
+}
+.special-card-info {
+  @include breakpoint(medium) {
+    padding: rem-calc(32);
+  }
 }
 .special-card-title {
   line-height: unitless-calc(25.05, 20);
+  color: #3328be;
+  transition: color 0.15s ease-in-out;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(20);
+  }
 }

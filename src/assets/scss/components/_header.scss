@@ -17,6 +17,12 @@
     align-items: center;
     max-width: rem-calc(380);
   }
+  @include breakpoint(small only) {
+    svg {
+      width: auto;
+      height: rem-calc(42.01);
+    }
+  }
 }
 .logo-text {
   padding-left: rem-calc(12);
@@ -41,6 +47,9 @@
     font-size: rem-calc(24);
     line-height: unitless-calc(32, 30);
     font-weight: 600;
+  }
+  @include breakpoint(large) {
+    font-size: rem-calc(30);
   }
 }
 .callback-link {

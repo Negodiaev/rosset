@@ -85,7 +85,6 @@
 @import 'components/side';
 @import 'components/breadcrumbs';
 @import 'components/sidebar';
-@import 'components/pagination';
 @import 'components/gallery';
 
 @import 'components/hero';
@@ -98,10 +97,8 @@
 @import 'pages/catalog';
 @import 'pages/category';
 @import 'pages/product';
+@import 'pages/blog';
 @import 'pages/article';
 @import 'pages/contacts';
 @import 'pages/staff';
 @import 'pages/error-page';
-
-// media queries
-@import 'global/responsive';

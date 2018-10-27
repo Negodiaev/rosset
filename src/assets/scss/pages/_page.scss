@@ -1,6 +1,9 @@
 .page-title {
   max-width: rem-calc(850);
   color: $anchor-color;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(20);
+  }
 }
 .custom-object-title {
   line-height: 1;
@@ -20,12 +23,27 @@
       }
     }
   }
+  @include breakpoint(large) {
+    padding-top: rem-calc(34);
+    padding-bottom: rem-calc(34);
+  }
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(20);
+    li {
+      margin-right: rem-calc(5);
+      width: rem-calc(36);
+    }
+  }
 }
 .content-card-title {
   margin-bottom: $global-margin;
   font-size: rem-calc(22);
   line-height: 1;
   font-weight: 600;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(46);
+    font-size: rem-calc(25);
+  }
 }
 .publications-title {
   color: $body-font-color;
@@ -33,6 +51,12 @@
 .banner {
   height: rem-calc(260);
   background-color: $primary-color;
+  @include breakpoint(medium) {
+    height: rem-calc(425);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(45);
+  }
 }
 .banner-content {
   position: relative;
@@ -43,9 +67,26 @@
   color: $white;
   background-color: rgba(#1b193d, 0.5);
   background-image: linear-gradient(to right, #1b193d 0%, transparent 100%);
+  @include breakpoint(medium) {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(30);
+  }
+  @include breakpoint(large) {
+    padding-left: rem-calc(70);
+    padding-right: rem-calc(70);
+  }
 }
 .banner-title {
   max-width: rem-calc(700);
+  @include breakpoint(medium) {
+    font-size: rem-calc(40);
+    line-height: unitless-calc(55, 40);
+    &.bordered {
+      &:after {
+        bottom: rem-calc(-30);
+      }
+    }
+  }
 }
 .content {
   img {
@@ -58,6 +99,10 @@
     font-size: rem-calc(18);
     line-height: unitless-calc(34.0001, 20);
     font-weight: 600;
+    @include breakpoint(medium) {
+      margin-left: rem-calc(-16);
+      font-size: rem-calc(20);
+    }
   }
   ol,
   ul {
@@ -112,6 +157,13 @@
     }
     &:last-child {
       padding-right: 0;
+      @include breakpoint(medium) {
+        padding-right: 0;
+        text-align: right;
+        label {
+          float: right;
+        }
+      }
     }
   }
   th {
@@ -140,22 +192,48 @@
       }
     }
   }
+  @include breakpoint(small only) {
+    &.stack {
+      thead {
+        th {
+          display: block;
+        }
+      }
+      tr,
+      th,
+      td {
+        display: block;
+      }
+      td {
+        border-top: 0;
+      }
+    }
+  }
 }
 .video-title {
   font-size: rem-calc(22);
   line-height: unitless-calc(34, 25);
   font-weight: 600;
+  @include breakpoint(medium) {
+    font-size: rem-calc(25);
+  }
 }
 .video-info {
   color: #7b7b7b;
 }
 .feedback-items {
   padding-bottom: rem-calc(10);
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(23);
+  }
 }
 .feedback-item {
   margin-bottom: rem-calc(25);
   padding-bottom: rem-calc(4);
   border-bottom: 1px solid #dbdbdb;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(36);
+  }
 }
 .feedback-title {
   margin-bottom: rem-calc(6);
@@ -164,14 +242,29 @@
 }
 .feedback-date {
   color: $secondary-color;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(18);
+  }
 }
 .map {
   width: 100%;
   height: rem-calc(300);
   border: 7px solid $white;
+  @include breakpoint(medium) {
+    height: rem-calc(400);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(560);
+  }
 }
 .dealers-map {
   height: rem-calc(486);
+  @include breakpoint(medium) {
+    height: rem-calc(360);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(500);
+  }
 }
 .tabs-content {
   border: 0;

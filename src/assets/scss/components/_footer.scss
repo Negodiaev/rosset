@@ -1,10 +1,18 @@
 .footer {
   color: #8c89b9;
   background-color: #1a1744;
+  @include breakpoint(large) {
+    background-image: linear-gradient(90deg, #1e1a51 25%, #1a1744 0);
+    background-repeat: no-repeat;
+  }
 }
 .footer-col {
   padding-top: rem-calc(30);
   padding-bottom: rem-calc(30);
+  @include breakpoint(large) {
+    padding-top: rem-calc(52);
+    padding-bottom: rem-calc(52);
+  }
 }
 .footer-contact-col {
   background-color: #1e1a51;
@@ -12,12 +20,18 @@
 .footer-logo {
   display: inline-block;
   margin-bottom: rem-calc(30);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(40);
+  }
 }
 .footer-callback,
 .footer-infoblock {
   margin-bottom: rem-calc(30);
   a {
     display: inline-block;
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(44);
   }
 }
 .footer-phone-link {
@@ -28,6 +42,9 @@
   &:hover,
   &:focus {
     color: $white;
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(16);
   }
 }
 .footer-callback-link {
@@ -42,6 +59,9 @@
   p {
     margin-bottom: rem-calc(6);
     line-height: unitless-calc(22, 15);
+    @include breakpoint(large) {
+      margin-bottom: rem-calc(12);
+    }
   }
 }
 .contact-infoblock {
@@ -85,13 +105,32 @@
 .footer-content {
   align-content: space-between;
   height: 100%;
+  @include breakpoint(large) {
+    padding-top: rem-calc(12);
+    padding-left: rem-calc(10);
+  }
+  @include breakpoint(xlarge) {
+    padding-left: rem-calc(28);
+  }
 }
 .links-col {
   margin-bottom: rem-calc(30);
+  @include breakpoint(large) {
+    & + .links-col {
+      border-left: 1px solid #302c68;
+      .links-col-title,
+      .links {
+        padding-left: rem-calc(10);
+      }
+    }
+  }
 }
 .links-col-title {
   margin-bottom: rem-calc(10);
   line-height: unitless-calc(30.05, 17);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(28);
+  }
 }
 .links {
   &.simple {
@@ -100,6 +139,16 @@
       padding: rem-calc(6 0);
       & + li {
         margin-left: 0;
+      }
+      @include breakpoint(medium) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        min-height: rem-calc(33);
+      }
+      @include breakpoint(large) {
+        min-height: rem-calc(59);
       }
     }
     a {
@@ -123,5 +172,11 @@
     &:focus {
       border-bottom-color: transparent;
     }
+  }
+  @include breakpoint(medium) {
+    margin-bottom: 0;
+  }
+  @include breakpoint(large) {
+    padding-right: rem-calc(35);
   }
 }

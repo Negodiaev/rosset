@@ -1,0 +1,10 @@
+.blog-sidebar {
+  @include breakpoint(large) {
+    padding-top: rem-calc(10);
+  }
+}
+.blog-title {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(40);
+  }
+}

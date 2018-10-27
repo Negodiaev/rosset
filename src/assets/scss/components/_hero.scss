@@ -1,3 +1,8 @@
+.hero {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(10);
+  }
+}
 .hero-slider {
   background-color: $primary-color;
   .swiper-pagination {
@@ -24,6 +29,22 @@
   .swiper-pagination-bullet-active {
     background-color: #fc0;
   }
+  @include breakpoint(medium) {
+    .swiper-pagination {
+      padding-left: rem-calc(48);
+      padding-right: rem-calc(48);
+    }
+    &.swiper-container-horizontal {
+      & > .swiper-pagination-bullets {
+        bottom: rem-calc(37);
+      }
+    }
+  }
+  @include breakpoint(xlarge) {
+    .hero-slide {
+      height: rem-calc(508);
+    }
+  }
 }
 .hero-slide-content {
   box-sizing: border-box;
@@ -35,10 +56,34 @@
     padding-right: rem-calc(20);
     line-height: unitless-calc(25, 15);
   }
+  @include breakpoint(medium) {
+    padding: rem-calc(58 53 70);
+    max-width: rem-calc(461);
+    p {
+      padding-right: rem-calc(10);
+    }
+  }
+  @include breakpoint(xlarge) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(65);
+    height: 100%;
+  }
+}
+.hero-slide-inner {
+  @include breakpoint(xlarge) {
+    overflow: hidden;
+  }
 }
 .hero-slide-title {
   line-height: unitless-calc(47.05, 35);
 }
 .hero-slide-info {
   margin-bottom: rem-calc(25);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(42);
+  }
 }

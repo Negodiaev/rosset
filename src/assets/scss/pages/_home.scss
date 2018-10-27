@@ -1,19 +1,68 @@
+.advantages {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(15);
+  }
+}
 .advantages-card-picture {
   color: $anchor-color;
+  @include breakpoint(medium) {
+    padding-top: rem-calc(47);
+  }
 }
 .advantages-card-title {
   margin-bottom: rem-calc(15);
   line-height: 1;
   text-align: center;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(26);
+  }
 }
 .advantages-card-info {
   padding-bottom: rem-calc(30);
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(52);
+  }
 }
 .delivery-map {
   padding-top: 0;
+  @include breakpoint(large) {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(4);
+  }
+}
+.delivery-map-picture {
+  @include breakpoint(large) {
+    position: relative;
+    overflow: hidden;
+    & > img {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      margin: 0;
+      max-width: none;
+      transform: translate(0, -50%);
+    }
+  }
 }
 .news {
   padding-bottom: 0;
+  @include breakpoint(large) {
+    padding-top: rem-calc(36);
+    padding-bottom: rem-calc(4);
+  }
+}
+.news-cards,
+.news-card-info,
+.purchase-list,
+.purchase-item {
+  @include breakpoint(medium only) {
+    display: flex;
+  }
+}
+.news-card {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(20);
+  }
 }
 .news-card-title {
   margin-bottom: rem-calc(12);
@@ -24,12 +73,33 @@
     margin-bottom: rem-calc(8);
     line-height: unitless-calc(22, 15);
   }
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(24);
+  }
+  @include breakpoint(medium only) {
+    flex-direction: column;
+    padding: rem-calc(20 15);
+  }
+}
+.news-card-date,
+.purchase-item-date {
+  @include breakpoint(medium only) {
+    margin-top: auto;
+  }
+}
+.custom-card {
+  @include breakpoint(large) {
+    margin-bottom: 0;
+  }
 }
 .custom-card-picture {
   text-align: center;
 }
 .custom-card-info {
   padding-bottom: rem-calc(20);
+  @include breakpoint(medium) {
+    padding: rem-calc(26 26 36);
+  }
 }
 .custom-card-title {
   margin-bottom: rem-calc(13);
@@ -37,10 +107,23 @@
 }
 .shareholders-card-picture {
   height: rem-calc(170);
+  @include breakpoint(medium) {
+    height: rem-calc(175);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(190);
+  }
+  @include breakpoint(xlarge) {
+    height: rem-calc(229);
+  }
 }
 .purchase {
   justify-content: space-between;
   padding: rem-calc(0 15 24);
+  @include breakpoint(medium only) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .purchase-list {
   li {
@@ -51,6 +134,21 @@
 }
 .purchase-item {
   padding: rem-calc(28 15 30);
+  @include breakpoint(medium only) {
+    flex-direction: column;
+    height: 100%;
+  }
+}
+.purchase-list {
+  @include breakpoint(medium only) {
+    border-bottom: 1px solid $medium-gray;
+    li {
+      & + li {
+        border-top: 0;
+        border-left: 1px solid $medium-gray;
+      }
+    }
+  }
 }
 .purchase-link {
   display: inline-block;
@@ -60,6 +158,22 @@
 }
 .publications-card-picture {
   height: rem-calc(175);
+  @include breakpoint(medium) {
+    height: rem-calc(180);
+  }
+  @include breakpoint(large) {
+    height: rem-calc(359);
+  }
+}
+.articles-card-info {
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(48);
+  }
+}
+.about-content-card {
+  @include breakpoint(large) {
+    margin-bottom: 0;
+  }
 }
 .partners-blocks-cell {
   margin-bottom: rem-calc(20);

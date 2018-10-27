@@ -13,6 +13,11 @@
   a {
     line-height: unitless-calc(32, 13);
   }
+  @include breakpoint(large) {
+    li {
+      letter-spacing: 0.1em;
+    }
+  }
 }
 .search-toggle {
   padding: rem-calc(13);

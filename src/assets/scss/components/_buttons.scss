@@ -42,6 +42,11 @@
     }
   }
 }
+.burger-wrapper {
+  @include breakpoint(small only) {
+    line-height: 0;
+  }
+}
 .burger {
   position: relative;
   width: 25px;

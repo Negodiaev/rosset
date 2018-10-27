@@ -1,5 +1,12 @@
 .contact-card {
   padding: rem-calc(10 15);
+  @include breakpoint(medium) {
+    padding-top: rem-calc(10);
+    padding-bottom: rem-calc(10);
+  }
+  @include breakpoint(large) {
+    padding: rem-calc(16 30);
+  }
 }
 .contact-item {
   padding: rem-calc(17 0);
@@ -25,20 +32,67 @@
     font-size: rem-calc(21);
     line-height: unitless-calc(23.0001, 22);
     font-weight: 300;
+    @include breakpoint(medium) {
+      font-size: rem-calc(22);
+    }
+  }
+}
+.contact-info-card {
+  @include breakpoint(large) {
+    overflow: auto;
+    margin-right: rem-calc(-20);
+    height: 100%;
+    max-height: rem-calc(560);
+  }
+}
+.contact-map {
+  @include breakpoint(large) {
+    margin-left: rem-calc(20);
+  }
+}
+.contact-details {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(36);
+    padding: rem-calc(40 30 26);
+  }
+  @include breakpoint(small only) {
+    padding-bottom: rem-calc(5);
   }
 }
 .contact-detail {
   line-height: unitless-calc(23.0001, 15);
+  @include breakpoint(small only) {
+    margin-bottom: rem-calc(30);
+  }
 }
 .contact-detail-title {
   margin-bottom: rem-calc(15);
   line-height: unitless-calc(23.05, 17);
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(27);
+  }
 }
 .contact-detail-row {
   margin-bottom: rem-calc(15);
 }
 .contacts-section-title {
   color: $black;
+}
+.contacts-about-card {
+  @include breakpoint(large) {
+    margin-bottom: 0;
+    padding: rem-calc(50 30 45);
+  }
+}
+.dealers {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(9);
+  }
+}
+.dealer {
+  @include breakpoint(large) {
+    padding: rem-calc(30 30 20);
+  }
 }
 .dealer-title {
   margin-bottom: rem-calc(6);

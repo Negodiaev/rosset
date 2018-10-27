@@ -1,8 +1,30 @@
+.staff-title {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(38);
+  }
+}
+.staff-card {
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(25);
+    padding: rem-calc(43 30);
+  }
+}
 .staff-content-title {
   margin-bottom: rem-calc(10);
   font-size: rem-calc(21);
   line-height: unitless-calc(32.05, 23);
   font-weight: 600;
+  @include breakpoint(medium) {
+    font-size: rem-calc(23);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(24);
+  }
+}
+.chiefs {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(25);
+  }
 }
 .chiefs-list {
   .chief-card {
@@ -14,6 +36,11 @@
   margin-left: rem-calc(-10);
   margin-right: rem-calc(-10);
   border: 0;
+  @include breakpoint(large down) {
+    .chief-card {
+      text-align: center;
+    }
+  }
 }
 .chief-card-wrapper {
   .chief-card {
@@ -43,6 +70,11 @@
       border-color: transparent transparent transparent transparent;
       transform: translateX(-50%);
     }
+    @include breakpoint(xlarge) {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
   }
   &.is-active {
     .chief-card {
@@ -63,11 +95,22 @@
     border-color: $anchor-color;
   }
 }
+.chief-card {
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+}
 .chief-card-picture {
   min-height: rem-calc(228);
+  @include breakpoint(medium) {
+    min-height: rem-calc(268);
+  }
 }
 .chief-card-info {
   padding-bottom: rem-calc(20);
+  @include breakpoint(medium) {
+    padding-bottom: rem-calc(40);
+  }
 }
 .chief-card-title,
 .chief-card-tel {
@@ -78,6 +121,9 @@
   font-size: rem-calc(17);
   line-height: unitless-calc(25, 18);
   font-weight: $global-weight-bold;
+  @include breakpoint(medium) {
+    font-size: rem-calc(18);
+  }
 }
 .chief-card-title {
   margin-bottom: rem-calc(10);
@@ -100,7 +146,13 @@
 }
 .chief-panel {
   margin: rem-calc(17 0 0);
+  @include breakpoint(large) {
+    padding: rem-calc(40 30 50);
+  }
 }
 .chief-panel-title {
   margin-bottom: rem-calc(15);
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(28);
+  }
 }

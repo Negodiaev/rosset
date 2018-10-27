@@ -1,3 +1,8 @@
+.goods-blocks {
+  @include breakpoint(large) {
+    padding-bottom: rem-calc(17);
+  }
+}
 .goods-card {
   &:hover,
   &:focus {

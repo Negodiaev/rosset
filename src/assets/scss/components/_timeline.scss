@@ -1,8 +1,24 @@
 .timeline-card {
   padding: rem-calc(20 40 20 10);
+  @include breakpoint(medium) {
+    padding: rem-calc(33 60 33 10);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(100);
+    padding: rem-calc(33 60 33 10);
+  }
+  @include breakpoint(xlarge) {
+    padding-right: rem-calc(100);
+  }
+  @media screen and (max-width: 480px) {
+    padding: rem-calc(20 15 10);
+  }
 }
 .timeline {
   padding-bottom: rem-calc(20);
+  @media screen and (max-width: 480px) {
+    padding-bottom: 0;
+  }
 }
 .timeline-item {
   display: flex;
@@ -18,6 +34,15 @@
     background-size: 2px 20px;
     background-position: 49px 0;
     background-repeat: repeat-y;
+    @include breakpoint(medium) {
+      background-position: 63px 0;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    display: block;
+    &:not(:last-child) {
+      background-image: none;
+    }
   }
 }
 .timeline-item-date {
@@ -28,10 +53,22 @@
   text-align: center;
   color: #d2ac64;
   background-color: $white;
+  @include breakpoint(medium) {
+    flex-basis: rem-calc(128);
+    padding: rem-calc(22 10);
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: rem-calc(10);
+    padding: 0;
+  }
 }
 .timeline-item-content {
   padding-top: rem-calc(26);
   & > :last-child {
     margin-bottom: 0;
+  }
+  @media screen and (max-width: 480px) {
+    margin-bottom: rem-calc(30);
+    padding: 0;
   }
 }

@@ -102,10 +102,28 @@ svg {
         height: 7px;
       }
     }
+    @include breakpoint(medium) {
+      margin-bottom: rem-calc(82);
+      &:after {
+        bottom: rem-calc(-45);
+      }
+    }
   }
 }
 .section-title {
   line-height: unitless-calc(32, 21);
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  @include breakpoint(medium) {
+    margin-bottom: rem-calc(20);
+  }
+  @include breakpoint(large) {
+    margin-bottom: rem-calc(34);
+  }
+}
+.lead {
+  @include breakpoint(small only) {
+    font-size: rem-calc(18);
+    line-height: 1.5;
+  }
 }
