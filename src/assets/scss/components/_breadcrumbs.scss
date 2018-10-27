@@ -1,6 +1,11 @@
 .breadcrumbs {
+  overflow: hidden;
   padding: rem-calc(26 0);
+  white-space: nowrap;
+  text-overflow: ellipsis;
   li {
+    float: none;
+    display: inline-block;
     line-height: unitless-calc(19, 14);
   }
   a {

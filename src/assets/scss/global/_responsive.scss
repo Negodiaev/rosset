@@ -1,44 +1,5 @@
 @include breakpoint(medium) {
-  ol,
-  ul {
-    &.list {
-      margin-bottom: rem-calc(30);
-    }
-  }
-  blockquote {
-    margin-left: rem-calc(-16);
-    font-size: rem-calc(20);
-  }
-  .submit-button {
-    margin-top: rem-calc(17);
-    margin-bottom: rem-calc(20);
-  }
-  .form {
-    label {
-      line-height: unitless-calc(46, 14);
-    }
-  }
-
   // Home page
-  .header-content {
-    padding-top: rem-calc(13);
-    padding-bottom: rem-calc(13);
-    border-bottom: 1px solid #cdccdb;
-  }
-  .header-logo {
-    display: flex;
-    align-items: center;
-    max-width: rem-calc(380);
-  }
-  .header-phone-link {
-    font-size: rem-calc(24);
-    line-height: unitless-calc(32, 30);
-    font-weight: 600;
-  }
-  .section {
-    padding-top: rem-calc(20);
-    padding-bottom: rem-calc(20);
-  }
   .section-title,
   .page-title {
     margin-bottom: rem-calc(20);
@@ -179,9 +140,10 @@
       }
     }
   }
-  .content {
-    img {
-      margin-bottom: rem-calc(20);
+  .custom-content {
+    blockquote {
+      margin-left: rem-calc(-16);
+      font-size: rem-calc(20);
     }
   }
   .content-table {
@@ -250,9 +212,14 @@
   .product-gallery-thumbs {
     height: 72px;
   }
-  .details-table-wrapper,
-  .parameters-table-wrapper {
-    margin-bottom: rem-calc(33);
+  .details-table {
+    th,
+    td {
+      &:last-child {
+        padding-right: rem-calc(10);
+        text-align: left;
+      }
+    }
   }
   .order {
     border-width: 25px;
@@ -274,12 +241,11 @@
   }
 
   // Article page
-  .article-table-block {
+  .article-table {
     margin-left: rem-calc(-30);
     margin-right: rem-calc(-30);
-    padding: rem-calc(20 0);
   }
-  .article-content-table {
+  .article-table {
     th,
     td {
       &:first-child {
@@ -289,10 +255,6 @@
         padding-right: rem-calc(30);
       }
     }
-  }
-  .article-video {
-    padding-top: rem-calc(18);
-    padding-bottom: rem-calc(17);
   }
 
   // Contacts page
@@ -347,17 +309,6 @@
 }
 
 @include breakpoint(large) {
-  ol,
-  ul {
-    &.list {
-      margin-top: rem-calc(35);
-      margin-bottom: rem-calc(50);
-    }
-  }
-  blockquote {
-    margin-top: rem-calc(52);
-    margin-bottom: rem-calc(52);
-  }
   .form {
     input,
     textarea {
@@ -502,11 +453,6 @@
     padding-left: rem-calc(70);
     padding-right: rem-calc(70);
   }
-  .content {
-    img {
-      margin-bottom: rem-calc(42);
-    }
-  }
   .feedback-items {
     padding-bottom: rem-calc(23);
   }
@@ -545,9 +491,9 @@
     margin-bottom: rem-calc(80);
     padding: rem-calc(0 9 33);
   }
-  .parameters-table-wrapper {
-    margin-top: rem-calc(54);
-    margin-bottom: rem-calc(55);
+  .parameters-content {
+    padding-left: rem-calc(30);
+    padding-right: rem-calc(70);
   }
   .order {
     margin-bottom: rem-calc(62);
@@ -569,13 +515,9 @@
   .article-objects {
     padding-bottom: rem-calc(21);
   }
-  .article-table-block {
+  .article-table {
     margin-left: rem-calc(-40);
     margin-right: rem-calc(-40);
-    padding-top: rem-calc(60);
-    padding-bottom: rem-calc(52);
-  }
-  .article-content-table {
     th,
     td {
       &:first-child {
@@ -817,14 +759,14 @@
     padding-bottom: rem-calc(12);
     li {
       display: none;
-      max-width: rem-calc(140);
+      max-width: 100%;
       font-size: rem-calc(13);
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
       &:first-child,
       &:last-child {
-        display: list-item;
+        display: inline-block;
       }
     }
   }
@@ -841,6 +783,23 @@
   .custom-object-picture {
     margin-bottom: rem-calc(20);
   }
+  .content-table {
+    &.stack {
+      thead {
+        th {
+          display: block;
+        }
+      }
+      tr,
+      th,
+      td {
+        display: block;
+      }
+      td {
+        border-top: 0;
+      }
+    }
+  }
   .pagination {
     margin-bottom: rem-calc(20);
     li {
@@ -855,10 +814,6 @@
   }
 
   //Product page
-  .details-table-wrapper {
-    padding-top: rem-calc(15);
-    padding-bottom: 0;
-  }
   .details-table {
     th,
     td {
@@ -868,7 +823,11 @@
         padding-top: 0;
       }
       &:first-child {
+        padding-left: rem-calc(10);
         font-weight: 600;
+      }
+      &:last-child {
+        padding-right: rem-calc(10);
       }
     }
   }
@@ -896,7 +855,7 @@
   }
 
   // Article page
-  .article-content-table {
+  .article-table {
     thead {
       background-color: #f9f9f9;
     }

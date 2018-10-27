@@ -5,6 +5,18 @@
 .header-content {
   padding-top: rem-calc(6);
   padding-bottom: rem-calc(6);
+  @include breakpoint(medium) {
+    padding-top: rem-calc(13);
+    padding-bottom: rem-calc(13);
+    border-bottom: 1px solid #cdccdb;
+  }
+}
+.header-logo {
+  @include breakpoint(medium) {
+    display: flex;
+    align-items: center;
+    max-width: rem-calc(380);
+  }
 }
 .logo-text {
   padding-left: rem-calc(12);
@@ -22,6 +34,13 @@
   &:hover,
   &:focus {
     color: $anchor-color;
+  }
+}
+.header-phone-link {
+  @include breakpoint(medium) {
+    font-size: rem-calc(24);
+    line-height: unitless-calc(32, 30);
+    font-weight: 600;
   }
 }
 .callback-link {

@@ -1,5 +1,9 @@
 .section {
   padding: rem-calc(10 0);
+  @include breakpoint(medium) {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+  }
 }
 .picture-container,
 .picture-container-content {

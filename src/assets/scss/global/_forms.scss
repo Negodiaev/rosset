@@ -114,6 +114,10 @@ textarea {
 }
 .submit-button {
   margin: rem-calc(10 0);
+  @include breakpoint(medium) {
+    margin-top: rem-calc(17);
+    margin-bottom: rem-calc(20);
+  }
 }
 .form {
   input,
@@ -125,5 +129,10 @@ textarea {
   }
   & > :last-child {
     margin-bottom: 0;
+  }
+  @include breakpoint(medium) {
+    label {
+      line-height: unitless-calc(46.001, 14);
+    }
   }
 }
